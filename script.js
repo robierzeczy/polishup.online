@@ -48,8 +48,8 @@ function observeTypewriter(id, text, delay, once = true, startDelay = 2000) {
 
 
 observeTypewriter("type1", "PROGRESS-ORIENTED COURSES", 100, false, 0); // za każdym razem, bez opóźnienia, wolno
-observeTypewriter("intensiveLink", "POWER PACK", 100, true, 1000);    // raz, 2s opóźnienia, szybciej
-observeTypewriter("basicLink", "BASIC PROGRAM", 100, true, 1000);        // raz, 2s opóźnienia, szybciej
+observeTypewriter("intensiveLink", "RAPID-FIRE", 100, true, 1000);    // raz, 2s opóźnienia, szybciej
+observeTypewriter("basicLink", "STEADY-FLOW", 100, true, 1000);        // raz, 2s opóźnienia, szybciej
 
 
   // ==== NAV TYPEWRITER ====
