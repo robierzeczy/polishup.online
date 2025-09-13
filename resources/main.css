@@ -1507,7 +1507,7 @@ h2 a {
 .image-text-rapid h4 {
   transition: transform 0.3s ease;
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 45px;
   color: #8a2be2;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
@@ -1527,7 +1527,7 @@ h2 a {
 .image-text-rapid-course h4 {
   transition: transform 0.3s ease;
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 45px;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1546,7 +1546,7 @@ h2 a {
   transition: transform 0.3s ease;
 
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 45px;
   color: #f06c9b;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
