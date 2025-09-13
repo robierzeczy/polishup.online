@@ -4323,6 +4323,8 @@ ul li {
     max-width: 90%;
     font-size: 16px;
     padding: 0 20px;
+      font-family: "Indie Flower", cursive !important;
+
   }
 }
 
@@ -4331,6 +4333,8 @@ ul li {
   .time {
     font-size: 15px;
     padding: 0 16px;
+      font-family: "Indie Flower", cursive !important;
+
   }
 }
 
@@ -4339,6 +4343,8 @@ ul li {
   .time {
     font-size: 14px;
     padding: 0 12px;
+      font-family: "Indie Flower", cursive !important;
+
   }
 }
 
