@@ -4188,6 +4188,8 @@ ul li {
   .time {
     padding: 0 15px; /* padding od krawędzi ekranu */
     text-align: center;
+      font-family: "Indie Flower", cursive !important;
+
   }
 
   .time p {
