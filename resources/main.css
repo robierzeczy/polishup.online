@@ -3375,7 +3375,7 @@ a.shiny-link:hover::after {
 }
 
 .time {
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower", "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 }
