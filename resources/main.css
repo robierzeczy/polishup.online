@@ -4705,3 +4705,28 @@ ul li {
     display: block;
   }
 }
+
+/* Telefony (do 600px) */
+@media (max-width: 600px) {
+  .details {
+    padding: 20px;
+    margin: 10px;
+    background: 
+      linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+      linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    background-size: 30px 30px; /* większe kratki */
+  }
+}
+
+/* Tablety (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .details {
+    padding: 40px;
+    margin: 20px auto;
+    background: 
+      linear-gradient(to right, #ddd 1px, transparent 1px),
+      linear-gradient(to bottom, #ddd 1px, transparent 1px);
+    background-size: 25px 25px; /* umiarkowane kratki */
+  }
+}
+
