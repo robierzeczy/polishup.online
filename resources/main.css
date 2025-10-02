@@ -5180,10 +5180,11 @@ display: none;
   .logo {
     height: 200px;
     width: 200px;
+    margin-bottom: -30px;
   }
 
   .rapid {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
     .courses h2.type3, .stay h4, .stay p {
