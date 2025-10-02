@@ -200,6 +200,7 @@ nav {
   width: 100px;
   height: 100px;
   margin-bottom: -30px; /* Moves text closer to the circle */
+  
 }
 
 .pink::before {
@@ -346,26 +347,23 @@ nav {
 
 @keyframes hitAndSettlePressed {
   0% {
-    transform: translateX(500px) scale(1);
+    transform: scale(1.3); /* start większy */
     opacity: 0;
   }
   50% {
-    transform: translateX(-10px) scale(1.05);
+    transform: scale(0.9); /* ściśnięcie */
     opacity: 1;
   }
   70% {
-    transform: translateX(5px) scale(0.95);
-    opacity: 1;
-  }
-  85% {
-    transform: translateX(0) scale(1);
+    transform: scale(1.05); /* lekkie odbicie */
     opacity: 1;
   }
   100% {
-    transform: translateX(0) scale(0.95, 0.9) translateY(3px);
+    transform: scale(1); /* końcowa stabilizacja */
     opacity: 1;
   }
 }
+
 
 .ppolish:hover {
   -webkit-text-stroke: 1.5px #8a2be2; /* grubość i kolor obramowania */
@@ -622,6 +620,8 @@ h4 {
   padding-right: 5px;
   transition: color 0.3s ease;
 }
+
+
 
 .main a {
   color: #1c3a41;
@@ -2465,10 +2465,16 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 nav a {
   font-size: 23px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   padding-right: 5px;
-  color: #d9d9ff;
+  color: black;
   margin: 0 auto;
+  font-weight: 20px;
+  padding-right: 5px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+
+
 }
 
 nav li {
@@ -2838,6 +2844,7 @@ letter-spacing: 1px;
   font-weight: 600;
   font-style: lighter;
     letter-spacing: 0;
+    margin-top: -15px;
 }
 
 .details2 a,
@@ -3077,15 +3084,10 @@ a.shiny-link:hover::after {
 }
 
 #maszyna3 {
-  display: inline-block; /* Ensure all tabs are visible */
-  visibility: visible; /* Make sure none of them are hidden */
-  opacity: 1; /* Ensure none are invisible */
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  z-index: 100;
-  color: #1c3a41;
-  font-size: 24px;
+  padding: 0;                   /* usuń padding-left */
+  display: inline-block;        /* potrzebne dla typeWriter */
+  text-align: center;           /* na wszelki wypadek */
+  line-height: 1;               /* dopasowanie pionowe, jeśli multi-line */
 }
 
 /* Additional styling for hover effects (optional) */
@@ -3375,7 +3377,7 @@ a.shiny-link:hover::after {
 }
 
 .time {
-  font-family: "Indie Flower", "Pacifico", cursive;
+  font-family: "Indie Flower", cursive !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -4188,7 +4190,7 @@ ul li {
   .time {
     padding: 0 15px; /* padding od krawędzi ekranu */
     text-align: center;
-      font-family: "Indie Flower", cursive !important;
+      font-family: "Indie Flower", "Pacifico", cursive !important;
 
   }
 
@@ -4323,8 +4325,6 @@ ul li {
     max-width: 90%;
     font-size: 16px;
     padding: 0 20px;
-      font-family: "Indie Flower", cursive !important;
-
   }
 }
 
@@ -4333,8 +4333,6 @@ ul li {
   .time {
     font-size: 15px;
     padding: 0 16px;
-      font-family: "Indie Flower", cursive !important;
-
   }
 }
 
@@ -4343,8 +4341,6 @@ ul li {
   .time {
     font-size: 14px;
     padding: 0 12px;
-      font-family: "Indie Flower", cursive !important;
-
   }
 }
 
@@ -4727,6 +4723,312 @@ ul li {
       linear-gradient(to right, #ddd 1px, transparent 1px),
       linear-gradient(to bottom, #ddd 1px, transparent 1px);
     background-size: 25px 25px; /* umiarkowane kratki */
+  }
+}
+
+
+
+/* TELEFONY (do 600px) */
+@media (max-width: 600px) {
+  .card-3d-wrapper {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .card-3d {
+    width: 100%;
+    min-height: auto;
+    border-radius: 12px;
+  }
+
+  /* FRONT */
+  .card-front {
+    height: 200px;
+    padding: 20px;
+  }
+
+  /* BACK */
+  .card-back {
+    transform: rotateY(180deg);
+    min-height: auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .card-3d-wrapper.expanded .card-back {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .card-face p {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .card-brand {
+    font-size: 12px;
+  }
+
+  .details2 {
+    margin: 0;
+    padding: 10px;
+    display: block;
+  }
+
+  .details2 p
+   {
+    line-height: 1.4;
+  }
+
+  #details3 {
+    font-size: 16px;
+  }
+
+  .shiny-link {
+    font-size: 30px;
+  }
+
+
+}
+
+/* --- DESKTOP (poniżej to Twoje normalne style, nie ruszamy) --- */
+
+/* TABLETY (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card-3d-wrapper {
+    width: 85%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0;
+  }
+
+  .card-3d {
+    width: 100%;
+    min-height: auto;
+    border-radius: 16px;
+  }
+
+  /* FRONT */
+  .card-front {
+    height: 250px;
+    padding: 25px;
+  }
+
+  /* BACK */
+  .card-back {
+    width: 100%;
+    padding: 25px;
+    min-height: auto;
+    border-radius: 16px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .card-3d-wrapper.expanded .card-back {
+    width: 85%;
+    max-width: 700px;
+    padding: 25px;
+    margin: 0 auto;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .card-face p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .details2 {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .details2 p {
+    line-height: 1.5;
+  }
+
+  #details3 {
+    font-size: 18px;
+  }
+}
+
+/* MOBILE (max-width: 600px) */
+@media (max-width: 600px) {
+  /* --- CARD BACK --- */
+  .card-back {
+    width: 100%;
+    padding: 15px !important;
+    height: auto !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .card-back .pricing-section {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .card-back .pricing-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .card-back .pricing-section p.cour {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* --- PRICING LIST --- */
+  .pricing-container,
+  .pricing-nav,
+  .pricing-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .pricing-list {
+    display: flex;
+    flex-direction: column; /* kolumna */
+    gap: 15px;
+  }
+
+  .pricing-item {
+    width: 100%;
+    position: relative;
+  }
+
+  .pricing-link {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    cursor: pointer;
+    background: #8A2BE2;
+    color: white;
+    border-radius: 6px;
+  }
+
+  /* --- SUBMENU --- */
+  .pricing-submenu {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: none;
+  }
+
+  .pricing-submenu-content {
+    display: none; /* domyślnie ukryte */
+    flex-direction: column;
+    gap: 10px;
+    background: #1c3a41;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative !important;
+    transform: none !important;
+  }
+
+  .pricing-submenu-content.show {
+    display: flex !important;
+  }
+
+  .sale-tag {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffe770;
+  }
+
+  .pricing-option p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 4px 0;
+  }
+
+  /* --- DETAILS2 SECTION --- */
+  .details2 {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .details2 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #details3 {
+    font-size: 16px;
+  }
+
+  /* --- OVERLAY --- */
+  .overlay {
+    display: none !important; /* overlay nie blokuje mobile */
+  }
+}
+
+/* MOBILE - ustawienie listy lekcji w kolumnie w odpowiednim miejscu */
+@media (max-width: 600px) {
+  /* kontener pricing-section */
+  .card-back .pricing-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0; /* odstep od paragrafu 'the more you commit' */
+  }
+
+  .card-back .pricing-list {
+    display: flex;
+    flex-direction: column; /* wszystkie elementy jeden pod drugim */
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .pricing-submenu-content {
+    position: relative !important; 
+    width: 100% !important;
+    transform: none !important;
+    display: block !important; /* zawsze widoczne w mobile */
+    margin-top: 5px;
+    box-sizing: border-box;
+    background: transparent; /* nie zmieniamy kolorów przycisków */
+    padding: 0;
+  }
+
+  .pricing-submenu {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  /* usuwamy overlay dla mobile */
+  .overlay {
+    display: none !important;
   }
 }
 
