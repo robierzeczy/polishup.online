@@ -2656,7 +2656,7 @@ nav h2 a {
 
   font-family: 'Poppins', sans-serif;
     font-family: "Poppins", sans-serif;
-  font-weight: bolder;
+  font-weight: 800px;
   margin: 0px;
   background: #66CCCC;
   width: 100%;
@@ -3387,8 +3387,7 @@ a.shiny-link:hover::after {
 }
 
 .time {
-  font-family: "Indie Flower", cursive !important;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -4206,12 +4205,13 @@ ul li {
   }
 
   .time p {
-    font-size: 23px; /* tekst bardziej kompaktowy */
+    font-size: 25px; /* tekst bardziej kompaktowy */
     margin-bottom: 0px;
   }
 
   .time .small {
-    font-size: 22px;
+    font-size: 23px;
+    margin-bottom: 0px;
   }
 }
 
@@ -5287,6 +5287,8 @@ display: none;
 
   .dawaj {
     margin-top: 200px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .footer {
