@@ -140,6 +140,7 @@ nav {
 
 
 
+
 /* DAWAJ Container (unchanged) */
 .center-text {
   font-size: 20px;
@@ -321,8 +322,13 @@ nav {
 .neon {
   color: #8a2be2;
   -webkit-text-stroke: 1.2px #00ffff;
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cień z góry */
+  font-family: "Poppins", sans-serif;
+  font-weight: 900; /* gruby font */
+  font-size: 69px;  /* dopasowany rozmiar */
+  display: inline-block; /* żeby można było łatwo animować */
 }
+
 
 .ppolish {
   text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6);
@@ -1215,16 +1221,7 @@ h2 a {
   text-align: center !important;
 }
 
-@keyframes slideUpLong {
-  0% {
-    opacity: 0;
-    transform: translateY(300px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 .outline h2.animate {
   animation: slideUpLong 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -2461,6 +2458,15 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 .nav {
   position: fixed;
   margin: 0 auto;
+}
+
+/* Ukrycie przycisku hamburgera na dużych ekranach */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 nav a {
@@ -5030,5 +5036,242 @@ ul li {
   .overlay {
     display: none !important;
   }
+}
+
+
+
+/* Mobile menu – widoczne tylko do 600px */
+@media (max-width: 600px) {
+  #menu-toggle {
+    display: none; /* checkbox niewidoczny */
+  }
+
+  .menu-label {
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border: 0.5px solid #000;
+    width: auto;               /* nie fit-content */
+    max-width: 90%;            /* maksymalnie 90% szerokości ekranu */
+    box-sizing: border-box;    /* padding wliczony w szerokość */
+    animation: hitAndSettlePressed 1.5s ease forwards;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 0;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 0px;                 /* odstępy między linkami */
+    padding: 0 10px;           /* padding wewnętrzny z lewej i prawej */
+    list-style: none;
+    max-width: 100%;            /* nie wychodzi poza ekran */
+    box-sizing: border-box;
+  }
+
+  .nav-list li {
+    margin: 0px 0;             /* pionowe odstępy między linkami */
+  }
+
+  /* pokazanie menu po kliknięciu */
+  #menu-toggle:checked + .menu-label + .nav-list {
+    display: flex;
+  }
+}
+
+/* Desktop – ukrycie napisu MENU */
+@media (min-width: 601px) {
+  #menu-toggle,
+  .menu-label {
+    display: none;
+  }
+}
+
+/* Ukryj logo na mobile */
+@media (max-width: 600px) {
+  .polishuplogo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .polish {
+    font-size: 36px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+        line-height: 1.5; /* zmniejsza odległość między wierszami */
+
+  }
+
+  .polish .neon {
+    display: block; /* górna linijka */
+    font-size: 55px;
+        font-weight: 1200; /* nadal gruby */
+          -webkit-text-stroke: 0.9px #00ffff; /* cień – tu zmieniasz grubość */
+
+
+  }
+
+  .polish .your-polish {
+    display: block; /* druga linijka */
+    opacity: 0;
+    animation: slideFromRight 1s ease-out forwards;
+    animation-delay: 1s; /* opóźnienie 1 sekundy */
+        text-align: right;           /* wyrównanie do lewej w obrębie span */
+
+  }
+}
+
+@media (max-width: 600px) {
+  .outline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  .content-section,
+  .content-section2 {
+    width: 100%; 
+    margin: 0px auto; 
+    padding: 0 15px;   /* odstęp od boków */
+    box-sizing: border-box; 
+    text-align: center;
+  }
+
+  .content-section h2 a {
+display: none;
+  }
+
+  .content-section p.trans {
+    margin: 0px 15px; 
+    font-size: 30px;
+    position: relative;
+  }
+
+  .content-section2 p {
+    font-size: 18px; 
+    line-height: 1.4;
+  }
+
+  .logo-container {
+    margin-top: 0px; /* odsuwa logo w dół */
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+  }
+
+  .rapid {
+    margin-top: 80px;
+  }
+
+    .courses h2.type3, .stay h4, .stay p {
+    display: none !important; /* ukrywa cały napis na mobile */
+
+  }
+
+  .courses h4 {
+display: none;
+
+  }
+
+    .guide {
+    margin: 100px 10px;
+  }
+
+  .guide h5 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  #free, .sylabus, #more, #more_steady {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%; /* przy telefonach przycisk zajmuje pełną szerokość */
+    max-width: 300px; /* żeby nie był za szeroki */
+    box-sizing: border-box;
+  }
+
+  .progress h4 {
+    font-size: 35px;
+  }
+
+
+    .gray {
+    width: 95%;
+    padding: 80px 20px 750px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
+    border-radius: 30px;
+    background-color: #8a2be2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px; /* odstęp od górnej zawartości */
+  }
+
+  .insta, .demo, .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0; /* równomierne odstępy między ikonami */
+    width: 100%;
+  }
+
+  .insta img, .demo img, .email img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; /* odstęp od tekstu */
+  }
+
+  #green, .sylabus {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 20px; /* odstęp między ikonami a przyciskiem */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  .color2 {
+        width: 85%;
+
+  }
+
+
+  #rapidi {
+    width: 60px;
+    height: 60px;
+  }
+
+  #steadyi {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  
 }
 
