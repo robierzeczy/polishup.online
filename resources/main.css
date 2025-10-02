@@ -1698,6 +1698,10 @@ h2 a {
     margin-right: 0;
   }
 
+  .vertical-line {
+    display: none;
+  }
+
   .rapid,
   .steady {
     margin: 10px 0;
@@ -1710,7 +1714,7 @@ h2 a {
     height: 60px;
   }
 
-  #more {
+  #more, #more2 {
     font-size: 16px;
     padding: 12px 20px;
   }
@@ -4184,7 +4188,8 @@ ul li {
 /* Dostosowanie dla telefonów FREE */
 @media screen and (max-width: 480px) {
   .logo-heading-container2 {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    margin-top: 80px;
   }
 
   .ppolish {
@@ -4635,6 +4640,7 @@ ul li {
 
   .progress {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .vertical-line {
@@ -4664,6 +4670,7 @@ ul li {
   .progress {
     flex-direction: row;
     flex-wrap: wrap;
+  
   }
 
   .vertical-line {
@@ -4711,6 +4718,7 @@ ul li {
 /* Telefony (do 600px) */
 @media (max-width: 600px) {
   .details {
+    margin-top: 0px;
     padding: 20px;
     margin: 10px;
     background: 
@@ -5154,10 +5162,11 @@ display: none;
   }
 
   .content-section p.trans {
-    margin: 0px 15px; 
+    margin: 0px auto; 
     font-size: 30px;
     position: relative;
   }
+
 
   .content-section2 p {
     font-size: 18px; 
@@ -5174,7 +5183,7 @@ display: none;
   }
 
   .rapid {
-    margin-top: 80px;
+    margin-top: 0px;
   }
 
     .courses h2.type3, .stay h4, .stay p {
@@ -5196,7 +5205,7 @@ display: none;
     margin-bottom: 15px;
   }
 
-  #free, .sylabus, #more, #more_steady {
+  #free, .sylabus, #more, #more2, #more_steady {
     font-size: 14px;
     padding: 8px 16px;
     width: 100%; /* przy telefonach przycisk zajmuje pełną szerokość */
@@ -5271,6 +5280,13 @@ display: none;
     height: 50px;
   }
 
+  .progress {
+    margin-bottom: 0px;
+  }
+
+  .dawaj {
+    margin-top: 200px;
+  }
 
   
 }
