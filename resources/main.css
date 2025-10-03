@@ -5318,5 +5318,28 @@ display: none;
     font-size: 16px;
     padding: 12px;
   }
+
+  @media (max-width: 600px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* odstępy między opcjami */
+  }
+
+  .pricing-item {
+    width: 100%;
+  }
+
+  .pricing-submenu-content {
+    display: none; /* domyślnie ukryte */
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .pricing-submenu-content.show {
+    display: flex; /* pokaż na kliknięcie */
+  }
+}
+
 }
 
