@@ -5301,6 +5301,23 @@ display: none;
     font-size: 30px;
   }
 
+
+
   
+}
+
+@media (max-width: 768px) {
+  .choice {
+    width: 100%;
+  }
+
+  .choice input[type="text"] {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px;
+  }
 }
 
