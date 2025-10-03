@@ -508,3 +508,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   pulse.addEventListener("click", () => text.classList.toggle("show"));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth <= 768) { // tylko na mobile
+    const mobileLinks = document.querySelectorAll(".pricing-link-mobile");
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault(); // niech link nie odświeża strony
+        const item = link.closest(".pricing-item-mobile");
+        const submenu = item.querySelector(".pricing-submenu-mobile");
+
+        // schowaj wszystkie inne submeny
+        document.querySelectorAll(".pricing-submenu-mobile").forEach(sm => {
+          if (sm !== submenu) sm.classList.remove("show");
+        });
+
+        // pokaż/ukryj kliknięte submenu
+        submenu.classList.toggle("show");
+      });
+    });
+  }
+});
