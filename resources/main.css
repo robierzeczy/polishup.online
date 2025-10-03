@@ -4351,6 +4351,7 @@ ul li {
   .time {
     font-size: 14px;
     padding: 0 12px;
+    font-weight: 600;
   }
 }
 
