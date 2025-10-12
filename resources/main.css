@@ -5416,3 +5416,20 @@ font-size: 25px;
     display: none;
   }
 }
+/* dla ekranów do 768px szerokości (typowy telefon) */
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* blokuje przewijanie w poziomie */
+    }
+
+    /* Dodatkowo upewnij się, że wszystkie kontenery nie wychodzą poza ekran */
+    .container, .content-section, .courses, .progress {
+        max-width: 100vw; 
+        box-sizing: border-box; /* padding nie zwiększa szerokości */
+    }
+
+    img {
+        max-width: 100%; /* obrazki skalują się do ekranu */
+        height: auto;
+    }
+}
