@@ -83,7 +83,7 @@ observeTypewriter("basicLink", "STEADY-FLOW", 100, true, 1000);        // raz, 2
   if (document.querySelector("#maszyna2"))
     typeWriterNav("F A Q", "maszyna2", 150);
   if (document.querySelector("#maszyna3"))
-    typeWriterNav("FREE DEMO", "maszyna3", 100);
+    typeWriterNav("free demo", "maszyna3", 100);
     if (document.querySelector("#maszyna4"))
     typeWriterNav("PolishUp", "maszyna4", 100);
 
