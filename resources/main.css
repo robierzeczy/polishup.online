@@ -45,7 +45,7 @@ main {
   gap: 20px; /* spacing between logo and text */
   justify-content: center; /* center both together horizontally */
   height: 10px;
-  background-color: #735d78;
+  background-color: #8A2BE2;
   margin-top: -40px;
   margin-bottom: 100px;
 }
@@ -60,18 +60,16 @@ main {
 }
 
 .popp {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace;
   letter-spacing: 0px;
-  font-weight: bolder;
   position: relative;
   display: inline;
   animation: bounce 1s ease infinite alternate;
-  font-weight: bold;
-  color: #1c3a41;
   vertical-align: baseline; /* or middle */
   line-height: 1; /* helps with smoother bounce */
   animation: smoothMove 2s ease-in-out infinite; /* 2s duration for slow movement */
+  font-weight: lighter;
+  
 }
 
 .pop {
@@ -112,7 +110,6 @@ header {
 }
 .polup {
   text-align: center;
-  font-family: "Amatic SC", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-weight: 100;
@@ -187,20 +184,27 @@ nav {
 
 /* Pulse Animation for Pink Circle */
 .pink-link {
-  position: relative;
-  display: inline-flex;
   flex-direction: column;
-  align-items: center;
   text-decoration: none;
   color: inherit;
 }
 
+.pink-link2 {
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  visibility: hidden;
+}
+
 .pink {
   position: relative;
-  display: block;
   width: 100px;
   height: 100px;
-  margin-bottom: -30px; /* Moves text closer to the circle */
+  margin-bottom: -50px; /* Moves text closer to the circle */
+  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-left: 50px;
+  margin-right: 60px;
   
 }
 
@@ -221,18 +225,20 @@ nav {
 }
 
 @keyframes pink-pulse-animation {
-  /* Changed animation name */
   0% {
     transform: translateX(-50%) scale(1);
     opacity: 1;
+    background-color: #8A2BE2;
   }
   50% {
     transform: translateX(-50%) scale(1.2);
     opacity: 0.7;
+    background-color: #A86CCF;
   }
   100% {
     transform: translateX(-50%) scale(1);
     opacity: 1;
+    background-color: #8A2BE2;
   }
 }
 
@@ -320,7 +326,7 @@ nav {
 }
 
 .neon {
-  color: #8a2be2;
+  color: #A86CCF;
   -webkit-text-stroke: 1.2px #00ffff;
   text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cień z góry */
   font-family: "Poppins", sans-serif;
@@ -336,17 +342,17 @@ nav {
   margin-bottom: 100px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
   animation: hitAndSettlePressed 1.5s ease forwards;
   opacity: 0; /* startowa przezroczystość */
   position: absolute;
   margin: 0;
-  font-size: 80px;
+  font-size: 60px;
   white-space: nowrap;
   overflow: hidden;
-  color: #1c3a41;
-  -webkit-text-stroke: 1px #00ffff;
+  color: #A86CCF;
+  -webkit-text-stroke: 1px #1c3a41;
   letter-spacing: -4px;
   word-spacing: 15px;
 }
@@ -372,7 +378,7 @@ nav {
 
 
 .ppolish:hover {
-  -webkit-text-stroke: 1.5px #8a2be2; /* grubość i kolor obramowania */
+  -webkit-text-stroke: 0.9px #A86CCF; /* grubość i kolor obramowania */
 }
 
 .details {
@@ -451,7 +457,7 @@ nav {
 }
 
 .polish {
-  color: #1c3a41;
+  color: #66CCCC;
   opacity: 0.7;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -467,7 +473,7 @@ nav {
   white-space: nowrap;
   overflow: hidden;
   -webkit-text-stroke: 0.3px #000000; /* grubość i kolor obramowania */
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   word-spacing: 15px;
 }
 
@@ -613,18 +619,22 @@ h4 {
 .gray h4 {
   font-size: 0px;
   font-size: 30px;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
   margin-top: 30px;
   color: #e9ebf8;
   font-family: "Annie Use Your Telescope", cursive;
 }
 
 .type {
-  font-size: 23px;
   letter-spacing: 4px;
-  font-weight: bold;
-  padding-right: 5px;
+  font-weight: bolder;
   transition: color 0.3s ease;
+  color: #1c3a41;
+    -webkit-text-stroke: 0.1px #00FFFF;
+  display: inline-block;
+  white-space: pre-line; /* pozwala łamać wiersz */
+
+
 }
 
 
@@ -643,10 +653,14 @@ h4 {
   transition: opacity 0.3s ease;
 }
 
+#small {
+   font-family: 'Courier New', Courier, monospace; 
+}
+
 .color2:hover #small {
   opacity: 1;
   visibility: visible;
-  color: #1b998b;
+  color: #66CCCC;
 }
 
 .color2:hover #small_int {
@@ -695,37 +709,35 @@ h4 {
 
 #more2:hover {
   color: #1c3a41 !important;
-  background-color: #41b3ac;
+  background-color: #66CCCC;
   transform: translateY(4px);
   border: 1px outset #1c3a41;
   transition: color 0.4s ease-in-out, transform 0.1s ease-in-out;
 }
 
+
 #more3 {
-  color: #f06c9b;
-  background-color: #1c3a41;
+  color: white;
+  background-color: #A86CCF;
   padding: 5px 10px;
   border-radius: 10px;
   letter-spacing: 0px;
-  font-size: 36px;
+  font-size: 18px;
   border: 0.5px outset #735d78;
-  text-decoration: underline;
   text-align: center;
   margin-top: 0px;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 100;
   font-style: italic;
   font-weight: lighter;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
   font-style: normal;
 }
 
 #more3:hover {
   color: white !important;
-  background-color: #1b998b;
+  background-color: #66CCCC;
   transform: translateY(4px);
   border: 1px outset #1c3a41;
 }
@@ -750,7 +762,7 @@ h4 {
 }
 
 #more_steady:hover {
-  background-color: #41b3ac !important;
+  background-color: #66CCCC !important;
   transform: translateY(4px);
   border: 1px outset #1c3a41;
   color: #1c3a41;
@@ -758,7 +770,7 @@ h4 {
 }
 
 #more:hover {
-  background-color: #41b3ac !important;
+  background-color: #66CCCC !important;
   transform: translateY(4px);
   border: 1px outset #1c3a41;
   color: #1c3a41 !important;
@@ -776,9 +788,8 @@ a#more:hover {
   text-align: center;
   margin-top: -10px;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+ font-family: 'Courier New', Courier, monospace; 
+ font-style: normal;
   font-weight: lighter;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -893,7 +904,7 @@ a {
 }
 
 .color2:hover {
-  background-color: #f06c9b;
+  background-color: #A86CCF;
 }
 
 .courses h4 {
@@ -903,7 +914,8 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
-  letter-spacing: 0px;
+  letter-spacing: -2px;
+  word-spacing: 2px;
   margin-top: -15px;
   -webkit-text-stroke: 1.2px #00ffff;
   text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
@@ -933,9 +945,10 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: bolder;
-  letter-spacing: 0px;
+  letter-spacing: -4px;
   text-align: right;
   margin-top: -20px;
+  margin-right: 4px;
   -webkit-text-stroke: 1px #00ffff;
   text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
 }
@@ -955,11 +968,12 @@ a {
 }
 
 .cour {
-    font-family: "Amatic SC", sans-serif; 
-font-weight: 700;
-font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 color: black; 
 font-size: 32px;
+text-align: center;
 }
 
 .courses h2 {
@@ -1107,9 +1121,7 @@ font-size: 32px;
   border: none;
   transition: all 0.3s ease;
   color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+
   font-weight: lighter;
   border: 2px solid #8a2be2;
 }
@@ -1213,12 +1225,13 @@ h2 a {
   border-radius: 10px;
   color: #735d78;
   line-height: 69px;
-  padding: 100px;
-  font-size: 100px;
-  font-family: "Annie Use Your Telescope", cursive;
-  -webkit-text-stroke: 2px #1c3a41; /* grubość i kolor obramowania */
+  padding: 10px;
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;  -webkit-text-stroke: 2px #1c3a41; /* grubość i kolor obramowania */
   padding: 15px;
-  text-align: center !important;
+  padding-top: 0px;
 }
 
 
@@ -1235,7 +1248,7 @@ h2 a {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
-  letter-spacing: 10px;
+  letter-spacing: -6px;
   width: 500px;
 }
 
@@ -1254,8 +1267,8 @@ h2 a {
 }
 
 .trans {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 700;
   width: max-content;
   margin: 0 auto;
   text-align: center;
@@ -1281,40 +1294,48 @@ h2 a {
   font-style: bolder;
   margin-top: 40px;
 }
+
+.content-section h2 {
+  margin-bottom: 1rem;  /* odstęp między h2 a listą */
+  text-align: center;   /* upewnia się, że sam h2 też jest wyśrodkowany */
+}
+
 .content-section {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically center */
   width: 50%;
   padding: 15px;
+  padding-left: 20px;
   padding-bottom: 70px;
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
   text-align: center;
   margin-top: -30px;
-  margin-left: 20px;
+  margin-left: 70px;
   margin-right: -30px;
   z-index: 100;
 }
 
+
+
 .content-section p {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-style: normal;
-  font-size: 34px;
-  line-height: 37px;
-  letter-spacing: -1px;
-  word-spacing: 2px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 1.6;
 }
 
 .content-section2 {
   display: flex;
-  margin-left: 160px;
-  margin-right: 120px;
+  margin-left: 180px;
+  margin-right: 50px;
   margin-top: -100px;
   flex-direction: column;
   justify-content: center; /* Vertically center */
-  width: 40%;
+  width: 60%;
   padding: 15px;
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
@@ -1322,9 +1343,10 @@ h2 a {
 }
 .content-section2 p {
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
+  letter-spacing: 0px;
 }
 
 .start {
@@ -1504,12 +1526,13 @@ h2 a {
 .image-text-rapid h4 {
   transition: transform 0.3s ease;
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 35px;
   color: #8a2be2;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace; 
+ letter-spacing: 0px;
+   font-weight: 700;
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   -webkit-text-stroke: 0.5px #00ffff;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
 }
@@ -1525,7 +1548,6 @@ h2 a {
   transition: transform 0.3s ease;
   margin-bottom: 0;
   font-size: 45px;
-  font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
@@ -1543,10 +1565,11 @@ h2 a {
   transition: transform 0.3s ease;
 
   margin-bottom: 0;
-  font-size: 55px;
-  color: #f06c9b;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+  font-size: 35px;
+  color: #A86CCF;
+ font-family: 'Courier New', Courier, monospace; 
+ letter-spacing: 0px;
+   font-weight: 700;
   font-style: bolder;
   letter-spacing: 0px;
   -webkit-text-stroke: 0.5px #00ffff;
@@ -1571,7 +1594,6 @@ h2 a {
   transition: transform 0.3s ease;
   margin-bottom: 0;
   font-size: 45px;
-  font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
@@ -1588,21 +1610,47 @@ h2 a {
 }
 
 #basicLink {
-  -webkit-text-stroke: 0.5px #f06c9b;
+
+    -webkit-text-stroke: 0.5px #1c3a41;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+
+  color: #A86CCF;
+    text-align: center;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  letter-spacing: -1px;
+}
+
+#basicLink:hover {
+  color: #66CCCC;
+}
+
+#intensiveLink:hover {
+  color: #66CCCC;
 }
 
 #intensiveLink {
-    -webkit-text-stroke: 0.5px #8A2BE2;
+  color: #8A2BE2;
+    -webkit-text-stroke: 0.5px #1c3a41;
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+
+        text-align: center;
+ font-family: 'Courier New', Courier, monospace; 
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  letter-spacing: -1fpx;
 
 }
 
 #schedule {
   transition: transform 0.3s ease, opacity 0.3s ease;
-  font-size: 23px;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-size: 15px;
+ font-family: 'Courier New', Courier, monospace; 
   font-weight: lighter;
+  letter-spacing: -1px;
 }
 
 #schedule:hover {
@@ -1730,12 +1778,12 @@ h2 a {
 
 .guide h5 {
   color: #1c3a41;
-  margin-bottom: 50px;
-  font-size: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
   letter-spacing: 0px;
-  word-spacing: 3px;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: lighter;
+  word-spacing: 0px;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 100;
   font-style: normal;
 }
 
@@ -1812,7 +1860,7 @@ h2 a {
   color: #00ffff;
   background-color: #1c3a41;
   border: 0.5px outset #41b3ac;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   letter-spacing: 0px;
   font-size: 16px;
@@ -1821,16 +1869,15 @@ h2 a {
   margin-top: 20px;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+ font-family: 'Courier New', Courier, monospace; 
+ font-style: normal;
   font-weight: lighter;
   width: auto;
 }
 
 #free:hover {
   transform: translateY(4px);
-  background: #41b3ac;
+  background: #66CCCC;
   color: #1c3a41;
   border: 0.2px outset #1c3a41;
   transition: color 0.3s ease-in-out, transform 0.1s ease-in-out;
@@ -1844,16 +1891,14 @@ h2 a {
   border: 0.5px outset #66cccc;
   padding: 10px 20px;
   border-radius: 10px;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   font-size: 16px;
   text-decoration: none;
   text-align: center;
   margin-top: 20px;
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+ font-family: 'Courier New', Courier, monospace; 
   font-weight: lighter;
   width: auto;
 }
@@ -1953,13 +1998,11 @@ h2 a {
 }
 
 #green {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+ font-family: 'Courier New', Courier, monospace; 
   transition: all 0.2s ease; /* ← add this */
   font-size: 16px;
   background-color: #8a2be2;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 10px;
   letter-spacing: 0px;
   color: #00ffff;
@@ -1967,9 +2010,9 @@ h2 a {
 }
 
 #green:hover {
-  background-color: #41b3ac;
+  background-color: #66CCCC;
   border: 0.5px outset #8a2be2;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 10px;
   letter-spacing: 0px;
   transform: translateY(4px);
@@ -1981,7 +2024,7 @@ h2 a {
 }
 
 .gray:hover #green:hover {
-  background-color: #41b3ac;
+  background-color: #66CCCC;
   color: #1c3a41;
   border: 0.5px outset #8a2be2;
 }
@@ -2023,14 +2066,13 @@ footer {
   margin-top: 120px;
 }
 
+
 .link {
-  font-size: 22 px;
+  font-size: 15px;
   color: #95849a;
-  letter-spacing: 2px;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace; 
   font-style: normal;
 }
 
@@ -2046,6 +2088,7 @@ footer {
 .dawaj2 {
   margin: 0;
   margin-bottom: -30px;
+  font-weight: normal;
 }
 
 .dawaj3 {
@@ -2059,10 +2102,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
 
 footer {
   overflow: hidden;
+  
 }
 
 /*COURSES*/
@@ -2108,10 +2154,12 @@ footer {
 /* Styling for the Pricing Links */
 .pricing-link {
   color: white;
+  line-height: 1.5;
   text-decoration: none;
   padding: 20px;
   display: block;
-  font-size: 17px;
+  margin-top: 20px;
+  font-size: 18px;
   background-color: #1c3a41;
   border-radius: 10px;
   font-weight: lighter;
@@ -2131,6 +2179,19 @@ footer {
 /* Each pricing item styles */
 .pricing-item {
   transition: all 0.3s ease;
+    position: relative;
+
+}
+
+.pricing-submenu {
+  position: absolute;
+  display: none;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.pricing-item:hover .pricing-submenu {
+  display: block;
 }
 
 
@@ -2164,21 +2225,20 @@ footer {
   z-index: 1000;
     backdrop-filter: none;     /* prevent blur/filter from showing background */
 mix-blend-mode: normal;
-
+ font-family: 'Courier New', Courier, monospace; 
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease, width 0.4s ease; /* Ensure width change is smooth */
   width: 300px; /*Set the default width */
   display: block;
   font-weight: lighter;
-  font-family: "Amatic SC", sans-serif; 
-font-weight: 700;
-font-style: normal;
+  font-style: normal !important;
    letter-spacing: 1px;
+   font-size: 20px;
 }
 
 .pricing-container .pricing-item p {
-  font-size: 30px !important;
+  font-size: 20px;;
 }
 
 
@@ -2205,14 +2265,23 @@ font-style: normal;
   animation: stamp 0.5s ease forwards;
 }
 
+.pricing-option p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+     font-size: 15px !important;
+     font-weight: 400;
+}
+
 .sale-tag {
+  
   position: absolute;
   top: 10px;
   right: -35px;
 background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   color: #1c3a41;
   padding: 6px 18px 6px 22px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   transform: rotate(20deg);
   z-index: 1000;
@@ -2226,8 +2295,9 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
-  letter-spacing: 0.5px;
+  letter-spacing: -1px;
   border: 0.2px outset #e6e6fa;
+
 }
 
 /* Paper hole (eyelet) */
@@ -2243,6 +2313,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   border-radius: 50%;
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
   z-index: 1001;
+  
 }
 
 /* Optional glow-on-hover effect */
@@ -2290,27 +2361,31 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 .pen_green {
   display: inline;
-  background: linear-gradient(
-      to right,
-      rgba(240, 108, 155, 0.3) 0%,
-      rgba(240, 108, 155, 0.6) 20%,
-      rgba(240, 108, 155, 0.4) 40%,
-      rgba(240, 108, 155, 0.7) 60%,
-      rgba(240, 108, 155, 0.5) 80%,
-      rgba(240, 108, 155, 0.65) 100%
-    ),
-    linear-gradient(
-      135deg,
-      transparent 10%,
-      rgba(240, 108, 155, 0.2) 30%,
-      transparent 50%
-    ),
-    linear-gradient(
-      45deg,
-      transparent 20%,
-      rgba(240, 108, 155, 0.15) 40%,
-      transparent 60%
-    );
+    color: #1c3a41;
+
+background: 
+  linear-gradient(
+    to right,
+    rgba(168, 108, 207, 0.3) 0%,
+    rgba(168, 108, 207, 0.6) 20%,
+    rgba(168, 108, 207, 0.4) 40%,
+    rgba(168, 108, 207, 0.7) 60%,
+    rgba(168, 108, 207, 0.5) 80%,
+    rgba(168, 108, 207, 0.65) 100%
+  ),
+  linear-gradient(
+    135deg,
+    transparent 10%,
+    rgba(168, 108, 207, 0.2) 30%,
+    transparent 50%
+  ),
+  linear-gradient(
+    45deg,
+    transparent 20%,
+    rgba(168, 108, 207, 0.15) 40%,
+    transparent 60%
+  );
+
 
   background-repeat: no-repeat;
   background-size: 100% 0.8em;
@@ -2323,6 +2398,8 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 .pen {
   display: inline;
+    color: #1c3a41;
+
   background: linear-gradient(
       to right,
       rgba(138, 43, 226, 0.3) 0%,
@@ -2405,26 +2482,25 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   }
 }
 
-.type {
-  font-size: 25px;
-  letter-spacing: -1px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: blinkCursor 0.75s step-end infinite;
-  display: inline-block;
+  .type {
+    font-size: 25px;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    animation: blinkCursor 0.75s step-end infinite;
+    display: inline-block;
 
-  /* ✅ Rezerwuj miejsce od razu */
-}
+    /* ✅ Rezerwuj miejsce od razu */
+  }
 
-@keyframes blinkCursor {
-  0%,
-  100% {
-    border-color: transparent;
+  @keyframes blinkCursor {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
   }
-  50% {
-    border-color: black;
-  }
-}
 
 .type2,
 #type1 {
@@ -2432,9 +2508,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   -webkit-text-stroke: 0.3px #00ffff;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
 
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
+ font-family: 'Courier New', Courier, monospace; 
   color: #00ffff;
   font-weight: lighter;
   white-space: nowrap;
@@ -2475,31 +2549,44 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 nav a {
   font-size: 23px;
-  letter-spacing: 2px;
-  padding-right: 5px;
-  color: black;
+  letter-spacing: 0px;
+margin: -10px;
+    color: black;
   margin: 0 auto;
-  font-weight: 20px;
-  padding-right: 5px;
-    font-family: "Poppins", sans-serif;
-    font-style: italic;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+       font-style: normal;
+     line-height: 0px;
 
 
 }
+
+.learn {
+  padding-right: 10px;
+}
+
+.nav-list li a.learn, .nav-list li a.learn2 {
+  display: inline-block; /* lub block */
+  margin-top: 18px;      /* odsuwa w dół */
+  text-decoration: underline;
+  text-decoration-color: #A86CCF;
+  text-decoration-style: dotted;
+}
+
 
 nav li {
   transition: transform 0.3s ease, 0.3s ease;
-  padding: 25px;
+       padding-bottom: 40px;
+
 }
 
-nav li:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-}
 
 .nav .ul {
   display: block;
   width: 400px;
   margin: 0;
+  
 }
 
 nav h2 a {
@@ -2610,7 +2697,7 @@ nav h2 a {
 .vertical-line {
   width: 1px;
   height: 100px;
-  background-color: #66cccc;
+  background-color: #1c3a41;
   margin: 0 40px; /* lub inna wartość */
   /* Pozycja linii w poziomie (50% oznacza środek ekranu) */
 }
@@ -2630,6 +2717,7 @@ nav h2 a {
 }
 
 .details {
+  color: #1c3a41;
   padding: 80px;
   padding-top: 20px;
   display: grid;
@@ -2646,7 +2734,7 @@ nav h2 a {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   word-spacing: 5px;
   letter-spacing: 5px;
@@ -2654,9 +2742,7 @@ nav h2 a {
    -webkit-text-stroke: 0.5px #00ffff;
   text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
 
-  font-family: 'Poppins', sans-serif;
-    font-family: "Poppins", sans-serif;
-  font-weight: 800px;
+ font-family: 'Courier New', Courier, monospace; 
   margin: 0px;
   background: #66CCCC;
   width: 100%;
@@ -2714,6 +2800,8 @@ nav h2 a {
   cursor: pointer;
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
   animation: glow 1.5s infinite alternate;
+   font-family: 'Courier New', Courier, monospace; 
+   
 }
 
 @keyframes glow {
@@ -2743,8 +2831,10 @@ padding: 100px;
 }
 
 .card-face p {
-  font-size: 32px;
+  font-size: 22px;
   color: #00FFFF;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 
@@ -2770,7 +2860,6 @@ padding: 100px;
   flex-direction: column;
   align-items: center;
   justify-content:   center;
-  font-family: "Amatic SC", sans-serif;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     height: 300px;
@@ -2840,9 +2929,8 @@ padding: 100px;
 }
 
 .details2 p {
-  font-size: 31px;
+  font-size: 21px;
   color: white;
-    font-family: "Amatic SC", sans-serif; 
 font-weight: 100;
 font-style: normal;
 letter-spacing: 1px;
@@ -2865,25 +2953,33 @@ letter-spacing: 1px;
 
 .details a,
 .action a {
-  font-size: 32px;
+    color: #1c3a41;
+  font-size: 21px;
   font-weight: bold;
   text-decoration: underline;
-}
+  text-decoration-color: #8A2BE2;
+     font-family: 'Courier New', Courier, monospace;
 
-.details a:hover {
-  -webkit-text-stroke: 0.5px black;
-font-style: italic;
 }
 
 .details p,
 .action p {
   margin-top: 0px;
-  font-size: 32px;
+  font-size: 21px;
   display: inline;
   line-height: 40px;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace; 
+  font-weight: 100;
   font-style: normal;
+  letter-spacing: -2px;
+  color: #735D78;
+}
+
+
+#bas, #int {
+  font-size: 25px;
+  letter-spacing: -2px;
+  color: #1c3a41;
 }
 
 a.shiny-link {
@@ -3072,7 +3168,8 @@ a.shiny-link:hover::after {
 #hiddenParagraph4 {
   position: relative; /* potrzebne, by wystawiające elementy miały punkt odniesienia */
   overflow: visible; /* pozwala obrazowi „wyjść” poza box */
-  border-left: 4px solid #f06c9b;
+  border-left: 4px solid #A86CCF;
+  
 }
 
 #maszyna1,
@@ -3094,10 +3191,13 @@ a.shiny-link:hover::after {
 }
 
 #maszyna3 {
-  padding: 0;                   /* usuń padding-left */
+
   display: inline-block;        /* potrzebne dla typeWriter */
-  text-align: center;           /* na wszelki wypadek */
   line-height: 1;               /* dopasowanie pionowe, jeśli multi-line */
+  letter-spacing: -2px;
+  font-size: 24px;
+  white-space: pre-line;
+
 }
 
 /* Additional styling for hover effects (optional) */
@@ -3122,12 +3222,13 @@ a.shiny-link:hover::after {
   background-color: #735d78;
   border-radius: 8px;
   color: white;
+  border-left: 4px solid #A86CCF;
 
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 500;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 500;
   font-style: normal;
-  font-size: 32px;
-  padding: 20px;
+  font-size: 18px;
+  padding: 40px;
 }
 
 .main {
@@ -3139,16 +3240,16 @@ a.shiny-link:hover::after {
 }
 
 .clickable {
-  color: #8a2be2;
-  border: 1px outset #66cccc;
-  font-size: 40px;
-  font-weight: bolder;
+  color: #A86CCF;
+  border: 1px outset #41B3AC;
+  font-size: 30px;
+  font-weight: lighter;
   word-spacing: 3px;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 100;
   letter-spacing: 0px;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 20px 20px;
   /*background: linear-gradient(135deg, #FFFFFF 0%, #D9D9FF 100%);*/
   background: #1c3a41;
   border-radius: 8px;
@@ -3159,12 +3260,11 @@ a.shiny-link:hover::after {
 }
 
 .clickable:hover {
-  background: #41b3ac;
+  background: #66CCCC;
   color: #1c3a41;
 
   transform: translateY(4px);
   border: 1px outset #1c3a41;
-  transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .clickable:active {
@@ -3318,6 +3418,7 @@ a.shiny-link:hover::after {
 #touch-email,
 #touch-phone {
   transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 15px;
 }
 
 #namee:hover,
@@ -3335,18 +3436,23 @@ a.shiny-link:hover::after {
 
 #option {
   margin-top: 20px;
+font-size: 15px;
+
 }
 
 .level-label {
-  padding: 30px;
-  padding-bottom: 45px;
-  letter-spacing: px;
+padding-left: 20px;
+padding-right: 20px;
+  padding-bottom: 15px !important;
+  letter-spacing: -1px;
+   font-family: 'Courier New', Courier, monospace; 
+   font-weight: lighter !important;
+   font-size: 15px;
 }
 
 .cta-text {
   text-align: center;
   font-size: 18px;
-  color: #e67e22;
   margin-bottom: 20px;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: -2px;
@@ -3393,15 +3499,15 @@ a.shiny-link:hover::after {
 
 .day h2,
 .day .weekdays h2 {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+     font-weight: 700;
   font-style: normal;
   font-weight: bolder;
   font-size: 100px;
 }
 
 .day h2 {
-  font-size: 100px;
+  font-size: 32 px !important;
 }
 
 .time-slots button {
@@ -3438,10 +3544,8 @@ a.shiny-link:hover::after {
 .custom-time {
   width: 40%;
   min-width: 300px; /* Zapewnia dobrą czytelność na małych ekranach */
-  margin: 30px auto; /* Wyśrodkowanie w kontenerze */
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  margin: 60px auto; /* Wyśrodkowanie w kontenerze */
+ font-family: 'Courier New', Courier, monospace; 
 
   display: flex;
   flex-direction: column;
@@ -3454,8 +3558,10 @@ a.shiny-link:hover::after {
 }
 
 section.custom-time label {
-  font-size: 30px !important;
   font-weight: lighter;
+   font-size: 19px !important;
+   letter-spacing: -2px;
+
 }
 
 textarea {
@@ -3523,29 +3629,34 @@ textarea:focus {
   align-items: center; /* Vertically align checkbox and label */
   flex-wrap: wrap; /* Allow wrapping if there are too many items in one line */
   gap: 20px; /* Space between checkboxes and their labels */
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .time p {
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
+ font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
   letter-spacing: -1px;
   word-spacing: 1px;
 }
 
 .small {
-  font-weight: lighter !important;
+    font-size: 15px;
+    letter-spacing: -2px !important;
+}
+
+.progress p {
+   font-family: 'Courier New', Courier, monospace; 
+   font-style: normal;
 }
 
 .time h2 {
   font-size: 35px;
   letter-spacing: 2px;
   text-align: center;
-  color: #f06c9b;
+  color: #A86CCF !important;
   font-weight: bolder;
-  -webkit-text-stroke: 0.5px #00ffff;
+  -webkit-text-stroke: 0.5px #1c3a41;
+  letter-spacing: -2px;
 }
 
 .time-slots label {
@@ -3662,8 +3773,6 @@ textarea:focus {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 0.6s ease-out;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
   font-style: normal;
   font-size: 22px;
   letter-spacing: 1px;
@@ -3697,13 +3806,11 @@ textarea:focus {
 }
 
 .experience h4 label {
-  font-size: 30px !important;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-size: 19px !important;
+ font-family: 'Courier New', Courier, monospace; 
   font-weight: lighter;
   word-spacing: -2px;
-  letter-spacing: 1px;
+  letter-spacing: -2px;
 }
 
 .level-range {
@@ -3714,19 +3821,20 @@ textarea:focus {
 }
 
 input[type="range"] {
+  font-size: 15px;
   width: 100%;
   max-width: 400px;
   -webkit-appearance: none;
   appearance: none;
   height: 10px;
-  background: #f06c9b;
+  background: #A86CCF;
   border-radius: 5px;
   transition: background 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 input[type="range"]:hover {
-  background: #41b3ac;
+  background: #66CCCC;
   transform: scale(1.03);
 }
 
@@ -3767,6 +3875,8 @@ input[type="range"]::-moz-range-thumb {
   opacity: 1;
   animation: wideShakeX 1s ease;
   transform: translateX(0);
+    padding-top: 10px;
+
 }
 
 @keyframes wideShakeX {
@@ -3788,18 +3898,23 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .choice label {
-  font-size: 30px; /* Change as needed */
+
+  font-size: 19px; /* Change as needed */
   font-weight: lighter;
+  letter-spacing: -2px;
+  padding-top: 50px;
 }
 
 .choice input[type="text"] {
-  font-size: 23px; /* Change input field text size */
+  
+  font-size: 18px; /* Change input field text size */
 }
 
 .choice h4 {
   word-spacing: -2px;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+ font-family: 'Courier New', Courier, monospace; 
+   font-weight: 100;
+
   font-style: normal;
 }
 
@@ -3919,9 +4034,8 @@ button:active {
   margin-bottom: 30px;
   justify-content: center; /* Center vertically */
   padding-top: 0;
-  font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+ font-family: 'Courier New', Courier, monospace; 
+ font-size: 15px !important;
 }
 
 section.touch {
@@ -3932,7 +4046,7 @@ section.touch {
 
 .touch input {
   font-family: inherit; /* dziedziczy z rodzica `.touch` */
-  font-size: 23px;
+  font-size: 18px;
 }
 
 hr.line7 {
@@ -4961,6 +5075,7 @@ ul li {
     box-sizing: border-box;
     position: relative !important;
     transform: none !important;
+    
   }
 
   .pricing-submenu-content.show {
@@ -5059,15 +5174,19 @@ ul li {
     cursor: pointer;
     font-size: 1.2rem;
     padding: 6px 10px;
-    border: 0.5px solid #000;
+    border: 0.5px solid #735D78;
     width: auto;               /* nie fit-content */
     max-width: 90%;            /* maksymalnie 90% szerokości ekranu */
     box-sizing: border-box;    /* padding wliczony w szerokość */
     animation: hitAndSettlePressed 1.5s ease forwards;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+ font-family: 'Courier New', Courier, monospace; 
     margin: 10px 0;
+     text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0px;
+  color: #735D78
   }
 
   .nav-list {
@@ -5079,16 +5198,25 @@ ul li {
     list-style: none;
     max-width: 100%;            /* nie wychodzi poza ekran */
     box-sizing: border-box;
+    color: #735D78;
   }
 
   .nav-list li {
     margin: 0px 0;             /* pionowe odstępy między linkami */
+    
+
   }
 
   /* pokazanie menu po kliknięciu */
   #menu-toggle:checked + .menu-label + .nav-list {
     display: flex;
   }
+}
+
+.nav-list a {
+  color: #735D78;
+  letter-spacing: -1px;
+  font-size: 23px;
 }
 
 /* Desktop – ukrycie napisu MENU */
@@ -5133,6 +5261,10 @@ ul li {
         text-align: right;           /* wyrównanie do lewej w obrębie span */
 
   }
+}
+
+.your-polish {
+  letter-spacing: -3px;
 }
 
 @media (max-width: 600px) {
@@ -5396,7 +5528,6 @@ display: none;
     font-weight: bold;
     color: #66CCCC;
     margin-bottom: 5px;
-      font-family: "Amatic SC", sans-serif; 
 font-weight: bolder;
 font-style: normal;
 letter-spacing: 3px;
@@ -5416,6 +5547,8 @@ font-size: 25px;
     display: none;
   }
 }
+
+
 /* dla ekranów do 768px szerokości (typowy telefon) */
 @media screen and (max-width: 768px) {
     html, body {
