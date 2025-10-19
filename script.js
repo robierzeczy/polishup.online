@@ -78,45 +78,43 @@ observeTypewriter("basicLink", "STEADY-FLOW", 100, true, 1000);        // raz, 2
     write();
   }
 
-  if (document.querySelector("#maszyna1"))
-    typeWriterNav("LEARNING", "maszyna1", 100);
-  if (document.querySelector("#maszyna2"))
-    typeWriterNav("F A Q", "maszyna2", 150);
-  if (document.querySelector("#maszyna3"))
-    typeWriterNav("free demo", "maszyna3", 100);
-    if (document.querySelector("#maszyna4"))
-    typeWriterNav("PolishUp", "maszyna4", 100);
+const container = document.getElementById("maszyna3");
+if (container) {
+  const lines = ["free", "demo"]; // dwa wiersze
+  const delay = 100;
 
-        if (document.querySelector("#maszyna5"))
-    typeWriterNav("F A Q", "maszyna5", 100);
-  // ==== FAQ "SHOW MORE" TOGGLE ====
+  container.textContent = "";
 
-  // Select all triggers and paragraphs whose IDs start with these prefixes
-  const triggers = document.querySelectorAll("[id^='showMoreTrigger']");
-  const paragraphs = document.querySelectorAll("[id^='hiddenParagraph']");
-  
+  function typeLine(lineText, parent, callback) {
+    const line = document.createElement("div");
+    line.style.display = "inline-block";
+    line.style.transform = "rotate(-15deg)";
+    line.style.transformOrigin = "left bottom";
+    line.style.marginBottom = "2px";
+    parent.appendChild(line);
 
-  const img = document.querySelector(".circle-wrapper img");
+    let i = 0;
+    function write() {
+      if (i < lineText.length) {
+        const span = document.createElement("span");
+        span.textContent = lineText[i];
+        line.appendChild(span);
+        i++;
+        setTimeout(write, delay);
+      } else if (callback) {
+        callback(); // po zakończeniu tej linii, zaczynamy kolejną
+      }
+    }
+    write();
+  }
 
-  window.addEventListener("scroll", () => {
-    img.classList.remove("rotate-animation");
-    void img.offsetWidth; // force reflow, restart animacji
-    img.classList.add("rotate-animation");
+  // rozpoczynamy od pierwszej linii
+  typeLine(lines[0], container, () => {
+    typeLine(lines[1], container); // po zakończeniu pierwszej, piszemy drugą
   });
+}
 
-  // Add event listeners to each trigger
-  triggers.forEach((trigger, index) => {
-    trigger.addEventListener("click", () => {
-      paragraphs.forEach((para, paraIndex) => {
-        // Toggle the clicked paragraph, hide the rest
-        if (index === paraIndex) {
-          para.classList.toggle("hidden");
-        } else {
-          para.classList.add("hidden");
-        }
-      });
-    });
-  });
+
 
   // ==== HEADER CLICK ALERTS ====
   const headers = document.querySelectorAll(".main .h2, .main .h2 a");
@@ -294,6 +292,23 @@ if (guideElement) {
     link.addEventListener("mouseenter", () => triggerStampEffect(tag));
   });
 });
+
+// ==== FAQ "SHOW MORE" TOGGLE ====
+const triggers = document.querySelectorAll("[id^='showMoreTrigger']");
+const paragraphs = document.querySelectorAll("[id^='hiddenParagraph']");
+
+triggers.forEach((trigger, index) => {
+  trigger.addEventListener("click", () => {
+    paragraphs.forEach((para, paraIndex) => {
+      if (index === paraIndex) {
+        para.classList.toggle("hidden"); // tylko kliknięty
+      } else {
+        para.classList.add("hidden"); // reszta chowamy
+      }
+    });
+  });
+});
+
 
 //===free==//
 document.addEventListener("DOMContentLoaded", function () {
@@ -529,4 +544,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  
 });
+
