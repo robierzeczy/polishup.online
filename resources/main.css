@@ -375,11 +375,6 @@ nav {
   }
 }
 
-
-.ppolish:hover {
-  -webkit-text-stroke: 0.9px #A86CCF; /* grubość i kolor obramowania */
-}
-
 .details {
   position: relative; /* ważne — kontekst dla absolute */
 }
