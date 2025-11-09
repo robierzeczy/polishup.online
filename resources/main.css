@@ -60,7 +60,6 @@ main {
 }
 
 .popp {
- font-family: 'Courier New', Courier, monospace;
   letter-spacing: 0px;
   position: relative;
   display: inline;
@@ -68,7 +67,7 @@ main {
   vertical-align: baseline; /* or middle */
   line-height: 1; /* helps with smoother bounce */
   animation: smoothMove 2s ease-in-out infinite; /* 2s duration for slow movement */
-  font-weight: lighter;
+  font-weight: 400;
   
 }
 
