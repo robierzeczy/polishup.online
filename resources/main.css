@@ -5567,3 +5567,362 @@ font-size: 25px;
         height: auto;
     }
 }
+
+
+@media (max-width: 600px) {
+  .outline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+
+  .content-section,
+  .content-section2 {
+    width: 100%; 
+    margin: 0px auto; 
+    padding: 0 15px;   /* odstęp od boków */
+    box-sizing: border-box; 
+    text-align: center;
+  }
+
+  .content-section h2 a {
+display: none;
+  }
+
+  .content-section p.trans {
+    margin: 0px auto; 
+    font-size: 18px;
+    position: relative;
+  }
+
+
+  .content-section2 p, .content-section p {
+    font-size: 18px; 
+    line-height: 1.4;
+  }
+
+  .logo-container {
+    margin-top: 0px; /* odsuwa logo w dół */
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -30px;
+    margin-top: -10px;
+  }
+
+  .rapid {
+    margin-top: 50px;
+  }
+
+ .courses h2.type3, .stay h4, .stay p {
+    display: none !important; /* ukrywa cały napis na mobile */
+
+  }
+
+  .courses h4 {
+display: none;
+
+  }
+
+    .guide {
+    margin: 100px 10px;
+  }
+
+  .guide h5 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 100 !important;
+  }
+
+  #free, .sylabus, #more, #more2, #more_steady {
+    font-size: 14px;
+    padding: 12px 12px !important;
+    width: 100% !important; /* przy telefonach przycisk zajmuje pełną szerokość */
+    max-width: 200px; /* żeby nie był za szeroki */
+    box-sizing: border-box;
+  }
+
+  .progress h4 {
+    font-size: 35px;
+  }
+
+
+    .gray {
+    width: 95%;
+    padding: 20px 20px 650px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
+    border-radius: 30px;
+    background-color: #8a2be2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px; /* odstęp od górnej zawartości */
+  }
+
+  .insta, .demo, .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0; /* równomierne odstępy między ikonami */
+    width: 100%;
+  }
+
+  .insta img, .demo img, .email img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; /* odstęp od tekstu */
+  }
+
+  #green {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    padding: 12px 12px;
+    margin-top: 20px; /* odstęp między ikonami a przyciskiem */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  .color2 {
+        width: 85%;
+        margin-top: -6px;
+        margin-bottom: -10px;
+        padding-bottom: 0px;
+
+  }
+
+
+  #rapidi {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  #steadyi {
+    width: 50px;
+    height: 50px;
+  }
+
+  .progress {
+    margin-bottom: 0px;
+    padding-top: 40px;
+  }
+
+  .dawaj {
+    margin-top: 200px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .day h2 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .pricing-container-mobile h1 {
+    letter-spacing: 0px;
+     font-family: 'Courier New', Courier, monospace; 
+     color: #735D78;
+       -webkit-text-stroke: 0.1px black;
+       font-weight: 200;
+
+
+  }
+
+
+
+  
+}
+
+@media (max-width: 768px) {
+  .choice {
+    width: 100%;
+  }
+
+  .choice input[type="text"] {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  @media (max-width: 600px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* odstępy między opcjami */
+  }
+  
+
+  .pricing-item {
+    width: 100%;
+  }
+
+  .pricing-submenu-content {
+    display: none; /* domyślnie ukryte */
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .pricing-submenu-content.show {
+    display: flex; /* pokaż na kliknięcie */
+  }
+}
+
+}
+
+/* Domyślnie ukryj na desktopie */
+.pricing-container-mobile {
+  display: none;
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pricing-container-mobile {
+    display: block;
+    padding: 10px;
+  }
+
+  /* Lista w kolumnie */
+  .pricing-list-mobile {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* kluczowe – pionowo */
+    gap: 15px; /* odstęp między elementami */
+  }
+
+  .pricing-item-mobile {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* elementy wewnątrz w kolumnie */
+    
+  }
+
+  .pricing-link-mobile {
+    display: block;
+    font-weight: lighter;
+    text-decoration: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 12px 12px;
+     font-family: 'Courier New', Courier, monospace; 
+  }
+
+  .pricing-submenu-mobile {
+    display: none; /* domyślnie ukryte */
+    padding: 10px 0;
+  }
+
+  .pricing-submenu-mobile.show {
+    display: block;
+  }
+
+  .sale-tag-mobile {
+  
+  position: absolute;
+  top: 10px;
+  right: -35px;
+background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
+  color: #1c3a41;
+  padding: 6px 18px 6px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  transform: rotate(20deg);
+  z-index: 1000;
+  overflow: hidden;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  letter-spacing: -1px;
+  border: 0.2px outset #e6e6fa;
+
+}
+    
+  }
+
+  .pricing-option-mobile p {
+    margin: 5px 0;
+      font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0px;
+  }
+
+  .card-3d-wrapper {
+    display: none;
+  }
+
+
+
+/* dla ekranów do 768px szerokości (typowy telefon) */
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* blokuje przewijanie w poziomie */
+    }
+
+    /* Dodatkowo upewnij się, że wszystkie kontenery nie wychodzą poza ekran */
+    .container, .content-section, .courses, .progress {
+        max-width: 100vw; 
+        box-sizing: border-box; /* padding nie zwiększa szerokości */
+    }
+
+    img {
+        max-width: 100%; /* obrazki skalują się do ekranu */
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+  .pricing-submenu-mobile.show {
+    position: relative;      /* ← to klucz — usuwa pozycjonowanie na środku */
+    top: auto;
+    left: auto;
+    transform: none;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 90%;              /* szerokość względem rodzica */
+    max-width: 400px;
+    margin: 10px auto 0;     /* odstęp od przycisku, wyśrodkowanie */
+    text-align: center;
+    z-index: 1;              /* nie musi być ogromny */
+  }
+}
