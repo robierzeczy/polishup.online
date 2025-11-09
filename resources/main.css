@@ -337,7 +337,7 @@ nav {
 
 
 .ppolish {
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 5px 1px rgba(0, 0, 0, 0.6);
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
@@ -351,8 +351,8 @@ nav {
   font-size: 60px;
   white-space: nowrap;
   overflow: hidden;
-  color: #A86CCF;
-  -webkit-text-stroke: 1px #1c3a41;
+  color: #735D78;
+  -webkit-text-stroke: 1px #00FFFF;
   letter-spacing: -4px;
   word-spacing: 15px;
 }
