@@ -4826,6 +4826,7 @@ ul li {
 }
 
 /* Telefony (do 600px) */
+
 @media (max-width: 600px) {
   .details {
     margin-top: 0px;
@@ -4835,6 +4836,10 @@ ul li {
       linear-gradient(to right, #e0e0e0 1px, transparent 1px),
       linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
     background-size: 30px 30px; /* większe kratki */
+  }
+    .content-section2 p, .content-section p {
+    font-size: 18px; 
+    line-height: 1.4;
   }
 }
 
