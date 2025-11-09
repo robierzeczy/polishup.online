@@ -5298,6 +5298,9 @@ display: none;
     margin: 0px auto; 
     font-size: 30px;
     position: relative;
+        background-color: #00FFFF;
+    border-radius: 10%;
+    width: 100%;    
   }
 
 
