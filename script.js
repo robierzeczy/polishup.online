@@ -512,6 +512,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const link = document.querySelector('a[href="#cardWrapper"]');
+const wrapper = document.getElementById("cardWrapper");
+const card = document.getElementById("card3d");
+
+if (wrapper && card) {
+  // Jeśli strona została otwarta z hash w URL
+  window.addEventListener("load", () => {
+    if (window.location.hash === "#cardWrapper") {
+      card.classList.add("flipped");
+      wrapper.classList.add("expanded");
+      wrapper.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
+  // Jeśli kliknięto link lokalny na tej samej stronie
+  if (link) {
+    link.addEventListener("click", () => {
+      card.classList.add("flipped");
+      wrapper.classList.add("expanded");
+      wrapper.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+}
 
 
 
