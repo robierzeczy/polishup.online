@@ -669,7 +669,7 @@ h4 {
   color: #00ffff;
   background: #1c3a41;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 16px;
   border: 0.5px outset #41b3ac;
@@ -688,7 +688,7 @@ h4 {
   color: #00ffff;
   background: #1c3a41;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 16px;
   border: 0.5px outset #00ffff;
@@ -716,7 +716,7 @@ h4 {
   color: white;
   background-color: #A86CCF;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 18px;
   border: 0.5px outset #735d78;
@@ -742,7 +742,7 @@ h4 {
   color: #00ffff;
   background: #1c3a41;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 16px;
   border: 0.5px outset #66cccc;
@@ -900,7 +900,7 @@ a {
 }
 
 .color2:hover {
-  background-color: #A86CCF;
+  background-color: pink;
 }
 
 .courses h4 {
@@ -1110,7 +1110,7 @@ text-align: center;
   display: inline-block;
   margin-top: -50px;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 15px;
   background-color: #efe9f4;
@@ -1482,9 +1482,7 @@ h2 a {
   gap: 40px;
 }
 
-.progress p {
-  color: #f8f8f2;
-}
+
 .rapid,
 .steady {
   display: flex;
@@ -1506,10 +1504,12 @@ h2 a {
 .rapid p,
 .steady p {
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic;
   font-size: 14px;
-  color: white;
+  color: white !important;
+
+
 }
 
 .image-text {
@@ -1555,6 +1555,12 @@ h2 a {
 .color2:hover .image-text-rapid h4 {
   color: #1c3a41;
   transition: color 1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.color2:hover .steady p,
+.color2:hover .rapid p {
+      -webkit-text-stroke: 0.3px black;
+
 }
 
 .image-text-steady h4 {
@@ -1647,6 +1653,8 @@ h2 a {
  font-family: 'Courier New', Courier, monospace; 
   font-weight: lighter;
   letter-spacing: -1px;
+  border-radius: 20px;
+
 }
 
 #schedule:hover {
@@ -1759,7 +1767,7 @@ h2 a {
   }
 
   #more, #more2 {
-    font-size: 16px;
+    font-size: 30px;
     padding: 12px 20px;
   }
 }
@@ -1857,7 +1865,7 @@ h2 a {
   background-color: #1c3a41;
   border: 0.5px outset #41b3ac;
   padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   font-size: 16px;
   text-decoration: none;
@@ -1886,7 +1894,7 @@ h2 a {
   background-color: #1c3a41;
   border: 0.5px outset #66cccc;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: -1px;
   font-size: 16px;
   text-decoration: none;
@@ -1999,7 +2007,7 @@ h2 a {
   font-size: 16px;
   background-color: #8a2be2;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   color: #00ffff;
   border: 0.5px outset #66cccc;
@@ -2009,7 +2017,7 @@ h2 a {
   background-color: #66CCCC;
   border: 0.5px outset #8a2be2;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   letter-spacing: 0px;
   transform: translateY(4px);
 }
@@ -2028,7 +2036,7 @@ h2 a {
 .gray {
   background-color: #8a2be2;
 
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 450px;
   padding-top: 60px;
@@ -3248,7 +3256,7 @@ a.shiny-link:hover::after {
   padding: 20px 20px;
   /*background: linear-gradient(135deg, #FFFFFF 0%, #D9D9FF 100%);*/
   background: #1c3a41;
-  border-radius: 8px;
+  border-radius: 15px;
   margin: 10px 0;
   display: inline-block;
   position: relative;
@@ -3415,6 +3423,8 @@ a.shiny-link:hover::after {
 #touch-phone {
   transition: transform 0.3s ease, opacity 0.3s ease;
   font-size: 15px;
+  border-radius: 20px;
+
 }
 
 #namee:hover,
@@ -3511,7 +3521,7 @@ padding-right: 20px;
   color: #1c3a41;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   margin: 10px 0;
   font-size: 16px;
   cursor: pointer;
@@ -3542,7 +3552,6 @@ padding-right: 20px;
   min-width: 300px; /* Zapewnia dobrą czytelność na małych ekranach */
   margin: 60px auto; /* Wyśrodkowanie w kontenerze */
  font-family: 'Courier New', Courier, monospace; 
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3760,7 +3769,7 @@ textarea:focus {
 .experience {
   padding: 20px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width: 50%;
@@ -3827,6 +3836,8 @@ input[type="range"] {
   border-radius: 5px;
   transition: background 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 20px;
+
 }
 
 input[type="range"]:hover {
@@ -3839,7 +3850,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #8d818c;
   cursor: pointer;
 }
@@ -3856,7 +3867,7 @@ input[type="range"]::-moz-range-thumb {
 .choice {
   padding: 20px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
   margin: 0 auto;
@@ -3902,7 +3913,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .choice input[type="text"] {
-  
+      border-radius: 20px;
+
   font-size: 18px; /* Change input field text size */
 }
 
@@ -4025,7 +4037,7 @@ button:active {
 .touch {
   padding: 20px;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   justify-content: center; /* Center vertically */
@@ -4699,7 +4711,7 @@ ul li {
     appearance: none;
     width: 100%;
     height: 14px;
-    border-radius: 7px;
+    border-radius: 20px;
     outline: none;
   }
 
@@ -4708,7 +4720,7 @@ ul li {
     appearance: none;
     height: 28px;
     width: 28px;
-    border-radius: 50%;
+    border-radius: 20px;
     cursor: pointer;
     margin-top: -7px; /* wycentrowanie */
   }
@@ -4716,7 +4728,7 @@ ul li {
   .level-range input[type=range]::-moz-range-thumb {
     height: 28px;
     width: 28px;
-    border-radius: 50%;
+    border-radius: 20px;
     cursor: pointer;
   }
 }
@@ -4752,6 +4764,8 @@ ul li {
     flex-direction: column;
     margin-bottom: 0px;
   }
+
+  
 
   .vertical-line {
     display: none;
@@ -5127,7 +5141,10 @@ ul li {
     flex-direction: column;
     gap: 10px;
     margin: 15px 0; /* odstep od paragrafu 'the more you commit' */
+  
   }
+
+ 
 
   .card-back .pricing-list {
     display: flex;
@@ -5136,6 +5153,10 @@ ul li {
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+
+  .highlight, .sylabus {
+    font-size: 18px;
   }
 
   .pricing-submenu-content {
@@ -5187,7 +5208,8 @@ ul li {
   font-weight: 500;
   font-style: italic;
   letter-spacing: 0px;
-  color: #735D78
+  color: #735D78;
+  border-radius: 20px;
   }
 
   .nav-list {
@@ -5200,11 +5222,14 @@ ul li {
     max-width: 100%;            /* nie wychodzi poza ekran */
     box-sizing: border-box;
     color: #735D78;
+
+    
   }
 
   .nav-list li {
     margin: 0px 0;             /* pionowe odstępy między linkami */
-    
+
+
 
   }
 
@@ -5298,9 +5323,14 @@ display: none;
     margin: 0px auto; 
     font-size: 30px;
     position: relative;
-        background-color: #00FFFF;
-    border-radius: 10%;
+
     width: 100%;    
+  }
+
+  .trans-section {
+background-color: pink;
+border-radius: 30px;
+padding: 20px;
   }
 
 
@@ -5343,7 +5373,7 @@ display: none;
   }
 
   #free, .sylabus, #more, #more2, #more_steady {
-    font-size: 14px;
+    font-size: 18px;
     padding: 8px 16px;
     width: 100%; /* przy telefonach przycisk zajmuje pełną szerokość */
     max-width: 300px; /* żeby nie był za szeroki */
@@ -5356,7 +5386,7 @@ display: none;
 
 
     .gray {
-    width: 95%;
+    width: 90%;
     padding: 20px 20px 650px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
     border-radius: 30px;
     background-color: #8a2be2;
@@ -5393,7 +5423,7 @@ display: none;
   #green, .sylabus {
     width: 100%;
     max-width: 300px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 8px 16px;
     margin-top: 20px; /* odstęp między ikonami a przyciskiem */
     box-sizing: border-box;
@@ -5646,7 +5676,7 @@ display: none;
   }
 
   #free, .sylabus, #more, #more2, #more_steady {
-    font-size: 14px;
+    font-size: 18px;
     padding: 12px 12px !important;
     width: 100% !important; /* przy telefonach przycisk zajmuje pełną szerokość */
     max-width: 200px; /* żeby nie był za szeroki */
@@ -5659,7 +5689,7 @@ display: none;
 
 
     .gray {
-    width: 95%;
+    width: 90%;
     padding: 20px 20px 650px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
     border-radius: 30px;
     background-color: #8a2be2;
@@ -5696,7 +5726,7 @@ display: none;
   #green {
     width: 100%;
     max-width: 300px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 12px 12px;
     margin-top: 20px; /* odstęp między ikonami a przyciskiem */
     box-sizing: border-box;
@@ -5705,12 +5735,14 @@ display: none;
 
 
   .color2 {
-        width: 85%;
+        width: 90%;
         margin-top: -6px;
         margin-bottom: -10px;
         padding-bottom: 0px;
+        border-radius: 30px;
 
   }
+
 
 
   #rapidi {
@@ -5932,7 +5964,14 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   }
 
   
-  .rapid p, .steady p {
+  .rapid p{
+    margin-right: 50px;
+        margin-left: 50px;
+        color: white !important;
+
+  }
+
+    .steady p{
     margin-right: 50px;
         margin-left: 50px;
 
