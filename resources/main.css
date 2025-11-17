@@ -3613,6 +3613,9 @@ textarea:focus {
   .day {
     width: 80%;
     margin-bottom: 20px;
+      display: flex;
+  flex-direction: column;
+  align-items: center;   /* <-- klucz! */
   }
 }
 
@@ -4326,12 +4329,12 @@ ul li {
   }
 
   .time p {
-    font-size: 32px; /* tekst bardziej kompaktowy */
-    margin-bottom: 0px;
+    font-size: 18px; /* tekst bardziej kompaktowy */
+    margin: 10px;
   }
 
   .time .small {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 0px;
   }
 }
@@ -4351,7 +4354,8 @@ ul li {
     }
 
     .day {
-        width: 100%;
+        width: 90%;
+        margin-left: 4px;
     }
 
     .day h2 {
@@ -4363,19 +4367,20 @@ ul li {
       .time-slots {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
+              justify-content: center;
+
           gap: 8px;
       }
 
   .slot {
-    padding: 8px;       /* równy padding po wszystkich stronach */
     font-size: 0.9rem;
     text-align: center;
-    box-sizing: border-box; /* aby padding wliczał się w szerokość */
 }
 
     .slot .time {
         display: block;
         font-size: 0.85rem;
+
     }
 
     
@@ -4746,8 +4751,19 @@ ul li {
   #hiddenParagraph #more3 {
     display: block;
     margin-bottom: 12px;
+    margin-top: 12px;
     text-align: center; /* opcjonalnie, żeby były ładnie wyśrodkowane */
+width: 60%;
   }
+
+  #hiddenParagraph,
+#hiddenParagraph2,
+#hiddenParagraph3,
+#hiddenParagraph4  {
+  padding: 20px;
+  padding-top: 50px;
+   padding-bottom: 50px;
+}
 }
 
 /* Telefony portret (max-width: 480px) */
