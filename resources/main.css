@@ -1767,7 +1767,7 @@ h2 a {
   }
 
   #more, #more2 {
-    font-size: 30px;
+    font-size: 18px;
     padding: 12px 20px;
   }
 }
@@ -4743,7 +4743,7 @@ ul li {
 
 /* Mobile fix – separacja linków w FAQ */
 @media (max-width: 480px) {
-  #hiddenParagraph a#more3 {
+  #hiddenParagraph #more3 {
     display: block;
     margin-bottom: 12px;
     text-align: center; /* opcjonalnie, żeby były ładnie wyśrodkowane */
@@ -5156,7 +5156,7 @@ ul li {
   }
 
   .highlight, .sylabus {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .pricing-submenu-content {
@@ -5373,7 +5373,7 @@ display: none;
   }
 
   #free, .sylabus, #more, #more2, #more_steady {
-    font-size: 18px;
+    font-size: 17px;
     padding: 8px 16px;
     width: 100%; /* przy telefonach przycisk zajmuje pełną szerokość */
     max-width: 300px; /* żeby nie był za szeroki */
@@ -5423,7 +5423,7 @@ display: none;
   #green, .sylabus {
     width: 100%;
     max-width: 300px;
-    font-size: 18px;
+    font-size: 17px;
     padding: 8px 16px;
     margin-top: 20px; /* odstęp między ikonami a przyciskiem */
     box-sizing: border-box;
@@ -5676,7 +5676,7 @@ display: none;
   }
 
   #free, .sylabus, #more, #more2, #more_steady {
-    font-size: 18px;
+    font-size: 17px;
     padding: 12px 12px !important;
     width: 100% !important; /* przy telefonach przycisk zajmuje pełną szerokość */
     max-width: 200px; /* żeby nie był za szeroki */
@@ -5726,7 +5726,7 @@ display: none;
   #green {
     width: 100%;
     max-width: 300px;
-    font-size: 18px;
+    font-size: 17px;
     padding: 12px 12px;
     margin-top: 20px; /* odstęp między ikonami a przyciskiem */
     box-sizing: border-box;
@@ -5779,7 +5779,7 @@ display: none;
 
   .pricing-container-mobile h1 {
     letter-spacing: 0px;
-     font-family: 'Courier New', Courier, monospace; 
+     font-family: "Poppins"; 
      color: #735D78;
        -webkit-text-stroke: 0.1px black;
        font-weight: 200;
