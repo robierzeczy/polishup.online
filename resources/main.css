@@ -6051,7 +6051,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
     width: 100%;          /* Wszystkie dni zajmują całą szerokość kontenera */
     max-width: 320px;     /* lub inna stała szerokość dla wszystkich dni */
     margin: 10px auto;    /* wyśrodkowanie całego dnia */
-    padding: 0;
+    padding: 15px;
     }
 
 
