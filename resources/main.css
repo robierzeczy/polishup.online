@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -1482,8 +1483,8 @@ h2 a {
   align-items: center;
   padding-bottom: 100px;
   animation: fadeInUp 1s ease-in-out;
-  margin-bottom: -10px;
-  margin-top: 30px;
+  margin-bottom: 0;
+  margin-top: -30px;
   gap: 40px;
 }
 
@@ -1775,7 +1776,6 @@ height: 100%;
   .steady {
     margin: 10px 0;
     text-align: center;
-
   }
 
   #rapidi,
@@ -3661,11 +3661,10 @@ textarea:focus {
 }
 
 .time p {
-  font-family: "Poppins", sans-serif;
+ font-family: 'Courier New', Courier, monospace; 
     font-size: 20px;
   letter-spacing: -1px;
   word-spacing: 1px;
-  
 }
 
 .small {
@@ -4500,7 +4499,6 @@ ul li {
     font-size: 14px;
     padding: 0 12px;
     font-weight: 600;
-
   }
 }
 
@@ -5077,11 +5075,10 @@ width: 60%;
   /* --- PRICING LIST --- */
   .pricing-container,
   .pricing-nav,
-  .pricing-list,
-   {
+  .pricing-list {
     width: 100%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     list-style: none;
   }
 
@@ -5379,7 +5376,6 @@ padding: 20px;
   background-color: #1c3a41;
 border-radius: 30px;
 padding: 20px; 
-padding-bottom: 70px !important;
 }
 
 
@@ -5501,8 +5497,7 @@ display: none;
   }
 
   .progress {
-    margin-bottom: -30px !important;
-    padding-bottom: -30px !important;
+    margin-bottom: 0px;
   }
 
   .dawaj {
@@ -5574,9 +5569,6 @@ display: none;
   .pricing-container-mobile {
     display: block;
     padding: 10px;
-    background-color: pink;
-    padding-top: 60px !important;
-    padding-bottom: -100px !important;
   }
 
   /* Lista w kolumnie */
@@ -5587,8 +5579,6 @@ display: none;
     display: flex;
     flex-direction: column; /* kluczowe – pionowo */
     gap: 15px; /* odstęp między elementami */
-      align-items: center;    /* WYŚRODKOWANIE poziome */
-
   }
 
   .pricing-item-mobile {
@@ -5597,52 +5587,8 @@ display: none;
     padding: 10px;
     display: flex;
     flex-direction: column; /* elementy wewnątrz w kolumnie */
-    width: auto;
-    margin: 0;
     
   }
-
-  /* Mobile only - do 768px szerokości */
-@media (max-width: 768px) {
-    /* Wszystkie elementy na mobile */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Opcjonalnie możesz dodać dodatkowe ustawienia dla formularza i przycisków */
-    form, .time, .weekdays {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px 10px; /* odstęp od krawędzi */
-        margin: 0 auto;  /* wycentrowanie */
-                display: flex;
-                        flex-direction: column;
-                                align-items: center; /* wyśrodkowanie wszystkich dzieci */
-    }
-  .day {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Wyśrodkowanie slotów */
-    width: 100%;          /* Wszystkie dni zajmują całą szerokość kontenera */
-    max-width: 320px;     /* lub inna stała szerokość dla wszystkich dni */
-    margin: 10px auto;    /* wyśrodkowanie całego dnia */
-    padding: 15px;
-    }
-
-
-    }
-
-   input, textarea {
-        width: 100%;
-        max-width: 300px; /* ograniczenie na mobile */
-        margin: 5px auto;
-        display: block;
-        text-align: center;
-    }
-}
-
 
   .pricing-link-mobile {
     display: block;
@@ -5962,13 +5908,8 @@ display: none;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
-    display: block;
-    margin: 0 auto;
-        width: fit-content;      /* <<< kluczowe */
-            align-self: center;        /* <<< działa w kolumnie flex */
-
-
-    
+    display: flex;
+    flex-direction: column; /* elementy wewnątrz w kolumnie */
     
   }
 
@@ -6085,3 +6026,34 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
   }
 }
+
+@media (max-width: 768px) {
+    /* Wszystkie elementy na mobile */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Opcjonalnie możesz dodać dodatkowe ustawienia dla formularza i przycisków */
+    form, .time, .weekdays {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px; /* odstęp od krawędzi */
+        margin: 0 auto;  /* wycentrowanie */
+                display: flex;
+                        flex-direction: column;
+                                align-items: center; /* wyśrodkowanie wszystkich dzieci */
+    }
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie slotów */
+    width: 100%;          /* Wszystkie dni zajmują całą szerokość kontenera */
+    max-width: 320px;     /* lub inna stała szerokość dla wszystkich dni */
+    margin: 10px auto;    /* wyśrodkowanie całego dnia */
+    padding: 15px;
+    }
+
+
+    }
