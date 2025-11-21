@@ -45,7 +45,7 @@ main {
   gap: 20px; /* spacing between logo and text */
   justify-content: center; /* center both together horizontally */
   height: 10px;
-  background-color: #8A2BE2;
+  background-color: #1c3a41;
   margin-top: -40px;
   margin-bottom: 100px;
 }
@@ -665,14 +665,19 @@ h4 {
   color: #8a2be2;
 }
 
+.color2:hover #type1 { 
+          -webkit-text-stroke: 0.3px black;
+
+  }
+
 #more {
   color: #00ffff;
-  background: #1c3a41;
+  background: #8a2be2;
   padding: 10px 20px;
   border-radius: 20px;
   letter-spacing: 0px;
   font-size: 16px;
-  border: 0.5px outset #41b3ac;
+  border: 0.5px outset #00FFFF;
   text-decoration: none;
   text-align: center;
   margin-top: -10px;
@@ -685,8 +690,8 @@ h4 {
 }
 
 #more2 {
-  color: #00ffff;
-  background: #1c3a41;
+  color: #1c3a41;
+  background: pink;
   padding: 10px 20px;
   border-radius: 20px;
   letter-spacing: 0px;
@@ -1547,6 +1552,7 @@ h2 a {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
+  
 }
 
 
@@ -1568,7 +1574,7 @@ h2 a {
 
   margin-bottom: 0;
   font-size: 35px;
-  color: #A86CCF;
+  color: #E07ECF;
  font-family: 'Courier New', Courier, monospace; 
  letter-spacing: 0px;
    font-weight: 700;
@@ -1585,11 +1591,17 @@ h2 a {
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
 }
 
-.image-text-steady-course {
+.image-text-steady-course, .image-text-rapid-course {
   display: flex;
   flex-direction: column;
   align-items: center; /* WAŻNE: poziome centrowanie */
   text-align: center; /* Centrowanie tekstu */
+  background: #1c3a41;
+  border-radius: 30px;
+padding: 20px;  
+padding-bottom: 50px;
+width: 100%;
+height: 100%;
 }
 
 .image-text-steady-course h4 {
@@ -1616,34 +1628,39 @@ h2 a {
     -webkit-text-stroke: 0.5px #1c3a41;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
 
-  color: #A86CCF;
+  color: #00FFFF;
     text-align: center;
  font-family: 'Courier New', Courier, monospace; 
-   font-weight: 700;
   font-size: 30px;
   font-style: normal;
   letter-spacing: -1px;
+      word-spacing: 3px;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 100;
 }
 
 #basicLink:hover {
-  color: #66CCCC;
+  color: pink;
 }
 
 #intensiveLink:hover {
-  color: #66CCCC;
+  color: #8A2BE2;
+  
 }
 
 #intensiveLink {
-  color: #8A2BE2;
+  color: #00FFFF;
     -webkit-text-stroke: 0.5px #1c3a41;
       text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
 
         text-align: center;
  font-family: 'Courier New', Courier, monospace; 
-  font-weight: 700;
   font-size: 30px;
   font-style: normal;
   letter-spacing: -1fpx;
+    word-spacing: 3px;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 100;
 
 }
 
@@ -1662,8 +1679,8 @@ h2 a {
 }
 
 #rapidi {
-  width: 102px;
-  height: 102px;
+  width: 90px;
+  height: 90px;
   opacity: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
   border-radius: 50%;
@@ -2370,12 +2387,12 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 background: 
   linear-gradient(
     to right,
-    rgba(168, 108, 207, 0.3) 0%,
-    rgba(168, 108, 207, 0.6) 20%,
-    rgba(168, 108, 207, 0.4) 40%,
-    rgba(168, 108, 207, 0.7) 60%,
-    rgba(168, 108, 207, 0.5) 80%,
-    rgba(168, 108, 207, 0.65) 100%
+    rgba(255, 192, 203, 0.3) 0%,
+    rgba(255, 192, 203, 0.6) 20%,
+    rgba(255, 192, 203, 0.4) 40%,
+    rgba(255, 192, 203, 0.7) 60%,
+    rgba(255, 192, 203, 0.5) 80%,
+    rgba(255, 192, 203, 0.65) 100%
   ),
   linear-gradient(
     135deg,
@@ -2505,6 +2522,8 @@ background:
       border-color: black;
     }
   }
+
+  
 
 .type2,
 #type1 {
@@ -2973,10 +2992,10 @@ letter-spacing: 1px;
   display: inline;
   line-height: 40px;
  font-family: 'Courier New', Courier, monospace; 
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: -2px;
-  color: #735D78;
+  color: #1c3a41;
 }
 
 
@@ -3289,7 +3308,7 @@ a.shiny-link:hover::after {
 }
 
 .more {
-  color: pink;
+  color: rgb(255, 192, 203);
   letter-spacing: -2px;
   text-decoration: underline;
 }
@@ -5310,6 +5329,8 @@ width: 60%;
 }
 
 @media (max-width: 600px) {
+
+  
   .outline {
     display: flex;
     flex-direction: column;
@@ -5346,8 +5367,19 @@ display: none;
   .trans-section {
 background-color: pink;
 border-radius: 30px;
-padding: 20px;
+padding: 20px;  
+
   }
+
+.image-text-steady-course, .image-text-rapid-course {
+  background-color: #1c3a41;
+border-radius: 30px;
+padding: 20px; 
+}
+
+
+
+  
 
 
   .content-section2 p {
