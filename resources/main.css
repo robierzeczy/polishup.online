@@ -3661,15 +3661,17 @@ textarea:focus {
 }
 
 .time p {
- font-family: 'Courier New', Courier, monospace; 
+ font-family: "Poppins", sans-serif; 
     font-size: 20px;
   letter-spacing: -1px;
   word-spacing: 1px;
+  padding-bottom: 5px;
 }
 
 .small {
     font-size: 15px;
     letter-spacing: -2px !important;
+    padding-bottom: 40px !important;
 }
 
 .progress p {
@@ -5376,6 +5378,7 @@ padding: 20px;
   background-color: #1c3a41;
 border-radius: 30px;
 padding: 20px; 
+padding-bottom: 65px;
 }
 
 
