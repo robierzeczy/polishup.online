@@ -6025,3 +6025,34 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
   }
 }
+
+@media (max-width: 768px) {
+    /* Wszystkie elementy na mobile */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Opcjonalnie możesz dodać dodatkowe ustawienia dla formularza i przycisków */
+    form, .time, .weekdays {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px; /* odstęp od krawędzi */
+        margin: 0 auto;  /* wycentrowanie */
+                display: flex;
+                        flex-direction: column;
+                                align-items: center; /* wyśrodkowanie wszystkich dzieci */
+    }
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie slotów */
+    width: 100%;          /* Wszystkie dni zajmują całą szerokość kontenera */
+    max-width: 320px;     /* lub inna stała szerokość dla wszystkich dni */
+    margin: 10px auto;    /* wyśrodkowanie całego dnia */
+    padding: 0;
+    }
+
+
+    }
