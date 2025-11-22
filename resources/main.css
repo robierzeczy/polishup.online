@@ -4889,6 +4889,10 @@ width: 60%;
       linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
     background-size: 30px 30px; /* większe kratki */
   }
+    .time p br {
+    display: none;
+  }
+  
     .content-section2 p, .content-section p {
     font-size: 18px; 
     line-height: 1.4;
