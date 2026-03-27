@@ -43,7 +43,7 @@ main {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 20px; /* spacing between logo and text */
+  gap: 120px; /* spacing between logo and text */
   justify-content: center; /* center both together horizontally */
   height: 10px;
   background-color: #1c3a41;
