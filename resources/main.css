@@ -115,9 +115,12 @@ header {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+  top: 0;    /* dodatkowe zabezpieczenie */
+  left: 0;   /* dodatkowe zabezpieczenie */
+  z-index: -1; /* żeby nie nachodziło na inne elementy */
 }
 
 .polup {
