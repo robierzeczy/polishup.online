@@ -3292,7 +3292,7 @@ a.shiny-link:hover::after {
 }
 
 .clickable {
-  color: #A86CCF;
+  color: #00FFFF;
   border: 1px outset #41B3AC;
   font-size: 30px;
   font-weight: lighter;
