@@ -3700,6 +3700,8 @@ textarea:focus {
     font-size: 15px;
     letter-spacing: -2px !important;
     padding-bottom: 40px !important;
+      margin-top: 130px;
+    margin-bottom: 50px;
 }
 
 .progress p {
