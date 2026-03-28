@@ -2796,7 +2796,7 @@ nav h2 a {
   border-radius: 8px;
 
   /* efekt notatki odręcznej */
-  transform: rotate(-1.5deg);
+  transform: rotate(-1deg);
   border: 1px solid #ddd;
   background-clip: padding-box;
   position: relative;
