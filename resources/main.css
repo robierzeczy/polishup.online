@@ -2779,13 +2779,48 @@ nav h2 a {
   padding: 80px;
   padding-top: 20px;
   display: grid;
-  justify-content: space-between; /* This will justify items inside the container */
+  justify-content: space-between;
   margin: 270px;
   margin-top: 0px;
   margin-bottom: 10px;
-  background: linear-gradient(to right, #ccc 1px, transparent 1px),
-    /* Linie pionowe */ linear-gradient(to bottom, #ccc 1px, transparent 1px); /* Linie poziome */
-  background-size: 20px 20px; /* Rozmiar kratki */
+
+  /* tło białe + kratka */
+  background-color: white;
+  background-image:
+    linear-gradient(to right, #ccc 1px, transparent 1px),
+    linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+
+  /* cień jak kartka na stole */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); /* delikatnie mocniejszy i rozmyty cień */
+  border-radius: 8px;
+
+  /* efekt notatki odręcznej */
+  transform: rotate(-1.5deg);
+  border: 1px solid #ddd;
+  background-clip: padding-box;
+  position: relative;
+}
+
+/* szpilki z delikatnym cieniem */
+.details::before,
+.details::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #735d78;
+  border-radius: 50%;
+  top: -6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* cień pod szpilką */
+}
+
+.details::before {
+  left: 20px;
+}
+
+.details::after {
+  right: 20px;
 }
 .card-brand {
   position: absolute;
