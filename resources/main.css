@@ -45,10 +45,9 @@ main {
   flex-direction: column; /* ustawienie w pionie, logo + tekst */
   align-items: center;
   justify-content: center; /* wyśrodkowanie poziome */
-  gap: 120px;              /* spacing between logo and text */
   height: auto;            /* dopasowanie wysokości do zawartości */
   background-color: #1c3a41;
-  padding-top: 200px;      /* odsunięcie od menu */
+  padding-top: 100px;      /* odsunięcie od menu */
   padding-bottom: 100px;   /* odsunięcie od sekcji Steady-Flow / Rapid-Fire */
   margin-top: 0;            /* usuń stare przesunięcie */
   margin-bottom: 0;         /* kontrolujemy dolny odstęp paddingiem */
