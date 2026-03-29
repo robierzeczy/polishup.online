@@ -15,7 +15,7 @@ html {
 body, html {
     margin: 0;
     padding: 0;
-        background-color: #66B2B2; /* Twój kolor tła */
+        background-color: #66B2B2; 
 
 }
 
@@ -32,16 +32,16 @@ main {
 }
 
 .xyz {
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .logo-heading-container {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 20px; /* spacing between logo and text */
-  justify-content: center; /* center both together horizontally */
+  gap: 20px; 
+  justify-content: center; 
   padding: 20px 0;
   height: 250px;
   background-color: #1c3a41;
@@ -51,15 +51,15 @@ main {
 .logo-heading-container2 {
   position: relative;
   display: flex;
-  flex-direction: column; /* ustawienie w pionie, logo + tekst */
+  flex-direction: column; 
   align-items: center;
-  justify-content: center; /* wyśrodkowanie poziome */
-  height: auto;            /* dopasowanie wysokości do zawartości */
+  justify-content: center; 
+  height: auto;            
   background-color: #1c3a41;
-  padding-top: 220px;      /* odsunięcie od menu */
-  padding-bottom: 140px;   /* odsunięcie od sekcji Steady-Flow / Rapid-Fire */
-  margin-top: 0;            /* usuń stare przesunięcie */
-  margin-bottom: 100;         /* kontrolujemy dolny odstęp paddingiem */
+  padding-top: 220px;     
+  padding-bottom: 140px;  
+  margin-top: 0;            
+  margin-bottom: 100;         
 }
 
 .logo-heading-container-background {
@@ -67,7 +67,7 @@ main {
   padding: 100px;
 }
 .no-break {
-  white-space: nowrap; /* Prevent breaking only for the key phrase */
+  white-space: nowrap; 
   overflow-wrap: normal;
 }
 
@@ -76,9 +76,9 @@ main {
   position: relative;
   display: inline;
   animation: bounce 1s ease infinite alternate;
-  vertical-align: baseline; /* or middle */
-  line-height: 1; /* helps with smoother bounce */
-  animation: smoothMove 2s ease-in-out infinite; /* 2s duration for slow movement */
+  vertical-align: baseline; 
+  line-height: 1; 
+  animation: smoothMove 2s ease-in-out infinite; 
   font-weight: 400;
   
 }
@@ -91,9 +91,9 @@ main {
   font-weight: bold;
   color: #d9d9ff;
   -webkit-text-stroke: 1px #1c3a41;
-  vertical-align: baseline; /* or middle */
-  line-height: 1; /* helps with smoother bounce */
-  animation: smoothMove 2s ease-in-out infinite; /* 2s duration for slow movement */
+  vertical-align: baseline; 
+  line-height: 1; 
+  animation: smoothMove 2s ease-in-out infinite; 
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -103,7 +103,7 @@ main {
   0%,
   100% {
     top: 0;
-  } /* Start and end at normal position (middle) */
+  } 
   50% {
     top: 4px;
   } /* Move slightly down */
@@ -129,9 +129,9 @@ header {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-  top: 0;    /* dodatkowe zabezpieczenie */
-  left: 0;   /* dodatkowe zabezpieczenie */
-  z-index: -1; /* żeby nie nachodziło na inne elementy */
+  top: 0;    
+  left: 0;  
+  z-index: -1; 
 }
 
 .polup {
@@ -161,10 +161,6 @@ nav {
   letter-spacing: 5px;
 }
 
-
-
-
-/* DAWAJ Container (unchanged) */
 .center-text {
   font-size: 20px;
   text-align: center;
@@ -176,37 +172,32 @@ nav {
   opacity: 0;
   transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out; /* 1s zamiast 0.3s */
   line-height: 30px;
-  pointer-events: none; /* początkowo nieklikalne */
+  pointer-events: none; 
   z-index: 10;
 
   
 }
 
-/* pokaz tekst jeśli hover na kółku LUB na samym tekście */
 .center-pulse:hover ~ .center-text,
 .center-text:hover,
 .center-text.show {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  pointer-events: auto; /* linki klikalne */
+  pointer-events: auto; 
 }
 
 .center-text a:hover {
-  animation: fadeIn 1s ease-in-out; /* Fade-in effect */
-  transform: scale(1.05); /* Slightly scale the h1on on hover */
+  animation: fadeIn 1s ease-in-out; 
+  transform: scale(1.05); 
 }
 
 .center-text a {
   color: #41B3AC;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
-  pointer-events: auto; /* klikalny link */
-    display: inline;      /* w jednej linii */
-
+  pointer-events: auto; 
+    display: inline;     
 }
-
-
-
 
 /* Pulse Animation for Pink Circle */
 .pink-link {
@@ -226,7 +217,7 @@ nav {
   position: relative;
   width: 100px;
   height: 100px;
-  margin-bottom: -50px; /* Moves text closer to the circle */
+  margin-bottom: -50px; 
   padding-bottom: 100px;
   padding-top: 0px;
   padding-left: 50px;
@@ -238,7 +229,7 @@ nav {
   z-index: -1;
   content: "";
   position: absolute;
-  top: -40px; /* Moves circle upwards */
+  top: -40px; 
   left: 80%;
   transform: translateX(-50%);
   width: 100px;
@@ -246,7 +237,7 @@ nav {
   border-radius: 50%;
   background-color: #8a2be2;
   border: 5px solid #efeff9;
-  animation: pink-pulse-animation 1.5s infinite; /* Changed animation name */
+  animation: pink-pulse-animation 1.5s infinite; 
   pointer-events: auto;
 }
 
@@ -268,13 +259,12 @@ nav {
   }
 }
 
-/* Center Pulse Animation for "DAWAJ" */
 .center-pulse {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120px; /* Initial size of the circle */
-  height: 120px; /* Initial size of the circle */
+  width: 120px; 
+  height: 120px; 
   border-radius: 50%;
   background: radial-gradient(
     circle at center,
@@ -284,8 +274,8 @@ nav {
   );
   box-shadow: 0 0 50px 25px rgba(28, 58, 65, 0.6),
     0 0 10px 4px rgba(255, 255, 255, 0.05) inset;
-  transform: translate(-50%, -50%) scale(0.001); /* Start as a very small circle (~1mm) */
-  animation: center-pulse-animation 2.5s infinite; /* Changed animation name */
+  transform: translate(-50%, -50%) scale(0.001); 
+  animation: center-pulse-animation 2.5s infinite; 
   z-index: 10;
   pointer-events: auto;
   cursor: pointer;
@@ -295,7 +285,6 @@ nav {
 }
 
 @keyframes center-pulse-animation {
-  /* Changed animation name */
   0% {
     box-shadow: 0 0 50px 25px rgba(28, 58, 65, 0.6),
       0 0 10px 4px rgba(255, 255, 255, 0.05) inset;
@@ -316,7 +305,6 @@ nav {
   }
 }
 
-/* Hover animation for center-pulse circle */
 .center-pulse:hover {
   animation: click-wave 0.6s ease-out forwards;
 }
@@ -348,17 +336,17 @@ nav {
 }
 
 #name:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }
 
 .neon {
   color: #8a2be2;
   -webkit-text-stroke: 1.2px #00ffff;
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cień z góry */
+  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); 
   font-family: "Poppins", sans-serif;
-  font-weight: 900; /* gruby font */
-  font-size: 69px;  /* dopasowany rozmiar */
-  display: inline-block; /* żeby można było łatwo animować */
+  font-weight: 900; 
+  font-size: 69px;  
+  display: inline-block; 
 }
 
 
@@ -369,7 +357,7 @@ nav {
   font-weight: 700;
   font-style: normal;
   animation: hitAndSettlePressed 1.5s ease forwards;
-  opacity: 0; /* startowa przezroczystość */
+  opacity: 0; 
   position: relative;
   margin: 0;
   font-size: 60px;
@@ -401,7 +389,7 @@ nav {
 }
 
 .details {
-  position: relative; /* ważne — kontekst dla absolute */
+  position: relative; 
 }
 
 .ppolish_basic {
@@ -417,10 +405,8 @@ nav {
   overflow: hidden;
   letter-spacing: -4px;
   word-spacing: 15px;
-
-  /* pozycja pionowa wewnątrz sekcji */
   position: absolute;
-  top: -100px; /* startowa pozycja */
+  top: -100px; 
   margin-top: 130px;
   left: -55px;
   writing-mode: vertical-rl;
@@ -431,14 +417,13 @@ nav {
   transition: all 0.7s ease-out;
 }
 
-/* klasa widoczności w obrębie sekcji */
 .ppolish_basic.visible {
   top: 0;
   opacity: 0.2;
 }
 
 .ppolish_basic:hover {
-  transform: rotate(180deg) scale(1.1); /* lekko powiększa, zachowując obrót */
+  transform: rotate(180deg) scale(1.1); 
 }
 
 .ppolish_intensive {
@@ -456,7 +441,6 @@ nav {
   letter-spacing: -4px;
   word-spacing: 15px;
 
-  /* pozycja pionowa po prawej stronie viewportu */
   position: absolute;
   top: -100px;
   margin-top: 710px;
@@ -469,7 +453,6 @@ nav {
   transition: all 0.7s ease-out;
 }
 
-/* klasa widoczności w obrębie sekcji */
 .ppolish_intensive.visible {
   top: 0;
   opacity: 0.2;
@@ -485,18 +468,17 @@ nav {
   font-weight: 900;
   font-style: normal;
   animation: slideFromRight 1s ease-out forwards;
-  opacity: 0; /* startowo niewidoczny */
+  opacity: 0; 
   position: absolute;
   margin: 0;
   font-size: 69px;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-text-stroke: 0.3px #000000; /* grubość i kolor obramowania */
+  -webkit-text-stroke: 0.3px #000000; 
   letter-spacing: 0px;
   word-spacing: 15px;
 }
 
-/* Kluczowa animacja */
 @keyframes slideFromRight {
   0% {
     transform: translateX(100%);
@@ -513,7 +495,7 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; /* center both together horizontally */
+  justify-content: center; 
   padding: 35px;
   color: #1c3a41;
   font-weight: lighter;
@@ -528,12 +510,8 @@ nav {
   background: linear-gradient(to left, #8d818c, #d9d9ff, #e6e6fa, #e9ebf8);
   border: 2px solid #e9ebf8;
   white-space: nowrap;
-  -webkit-text-stroke: 1px #e9ebf8; /* grubość i kolor obramowania */
+  -webkit-text-stroke: 1px #e9ebf8; 
 }
-
-/*DIGITAL PLATFORM*/
-
-/* Section containing all content */
 
 .platform h3 {
   animation: zoomIn 1s ease-in-out;
@@ -562,12 +540,12 @@ nav {
 }
 
 .logo-container {
-  text-align: center; /* Centers text inside elements like h5 */
+  text-align: center; 
   margin-top: -250px;
 }
 
 .logo {
-  height: 240px; /* Height of the circle */
+  height: 240px; 
   margin: 0 auto;
   border-radius: 50%;
   padding: 0px;
@@ -611,7 +589,7 @@ nav {
 }
 
 .to {
-  text-align: left; /* Align text to the left inside .to */
+  text-align: left; 
 }
 
 .to h4,
@@ -651,13 +629,9 @@ h4 {
   color: #1c3a41;
     -webkit-text-stroke: 0.1px #00FFFF;
   display: inline-block;
-  white-space: pre-line; /* pozwala łamać wiersz */
+  white-space: pre-line; 
     margin-top: -6px;
-
-
-
 }
-
 
 
 .main a {
@@ -691,7 +665,7 @@ h4 {
 }
 
 .color2:hover #type1 { 
-          -webkit-text-stroke: 0.3px black;
+  -webkit-text-stroke: 0.3px black;
 
   }
 
@@ -820,10 +794,6 @@ a#more:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-/* Pseudo-element: rozbłysk z fade-in */
-
-
 h2 {
   font-size: 40px;
   color: #4c4c4c;
@@ -838,12 +808,12 @@ main h3 {
 }
 
 h3 span {
-  opacity: 0; /* Start with each word invisible */
-  display: inline-block; /* Allow each word to animate separately */
+  opacity: 0; 
+  display: inline-block; 
   animation: fadeInWord 1s ease forwards;
   animation-delay: calc(
     0.4s * var(--i)
-  ); /* Delay each word by 0.5s times the index */
+  ); 
 }
 
 @keyframes fadeInWord {
@@ -852,7 +822,6 @@ h3 span {
   }
 }
 
-/* Add a custom property to control the delay of each word */
 h3 span:nth-child(1) {
   --i: 0;
 }
@@ -944,7 +913,7 @@ a {
   word-spacing: 2px;
   margin-top: -15px;
   -webkit-text-stroke: 1.2px #00ffff;
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); 
 }
 
 .coursess h4 {
@@ -976,7 +945,7 @@ a {
   margin-top: -20px;
   margin-right: 4px;
   -webkit-text-stroke: 1px #00ffff;
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); 
 }
 
 .stay h4:hover {
@@ -991,7 +960,7 @@ a {
   margin-top: -20px;
     letter-spacing: -4px;
   -webkit-text-stroke: 1px #8a2be2;
-  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 10px 1px rgba(0, 0, 0, 0.6); 
 }
 
 .cour {
@@ -1008,7 +977,7 @@ text-align: center;
 }
 
 .courses h4:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
 .gray a {
@@ -1025,9 +994,9 @@ text-align: center;
 }
 
 .center {
-  margin: 0; /* Remove default margin */
-  display: flex; /* Flexbox layout */
-  align-items: center; /* Center vertically */
+  margin: 0; 
+  display: flex; 
+  align-items: center; 
 }
 
 .pusmall {
@@ -1042,7 +1011,7 @@ text-align: center;
   height: 3px;
   margin: 0 auto;
   margin-top: 0px;
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block; 
   background-color: #8d818c;
   animation: dashBounce 0.2s linear infinite;
 }
@@ -1063,7 +1032,7 @@ text-align: center;
   width: 0;
   max-width: 60%;
   margin: 0 auto;
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block; 
   position: relative;
   animation: slideInLine 1.5s ease-out forwards;
   color: pink;
@@ -1090,7 +1059,7 @@ text-align: center;
   margin: 140px;
   margin-bottom: 100px;
   margin-top: 100px;
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block; 
   border-top: 1px solid #95849a;
 }
 
@@ -1099,7 +1068,7 @@ text-align: center;
   margin: 200px;
   margin-bottom: 40px;
   margin-top: 40px;
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block; 
   border-top: 1px solid #95849a;
 }
 
@@ -1120,7 +1089,7 @@ text-align: center;
   margin: 144px;
   margin-bottom: 100px;
   margin-top: 100px;
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block; 
   border-top: 2px solid #95849a;
 }
 
@@ -1159,7 +1128,6 @@ text-align: center;
   border: 0.2px outset white;
 }
 
-/* Key Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1195,11 +1163,11 @@ h1 {
   line-height: 70px;
   padding: 10px;
   font-size: 50px;
-  -webkit-text-stroke: 2px #1c3a41; /* grubość i kolor obramowania */
+  -webkit-text-stroke: 2px #1c3a41;
 }
 
 h1:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); 
   color: #1c3a41;
 }
 
@@ -1223,12 +1191,12 @@ h1:hover {
   display: flex;
   box-sizing: border-box;
   text-align: center;
-  justify-content: center; /* This will justify items inside the container */
+  justify-content: center;
   margin: 100px 400px 35px 230px;
   transition: transform 0.3s ease-in-out;
   align-items: center;
-  justify-content: center; /* Aligns content horizontally in the center */
-  align-items: center; /* Aligns content vertically in the center */
+  justify-content: center; 
+  align-items: center; 
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -1256,19 +1224,17 @@ h2 a {
   font-size: 80px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  font-style: normal;  -webkit-text-stroke: 2px #1c3a41; /* grubość i kolor obramowania */
+  font-style: normal;  -webkit-text-stroke: 2px #1c3a41;
   padding: 15px;
   padding-top: 0px;
 }
-
-
 
 .outline h2.animate {
   animation: slideUpLong 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .outline h2:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
 .outline h2 {
@@ -1303,8 +1269,8 @@ h2 a {
 }
 
 .trans:hover {
-  animation: fadeIn 1s ease-in-out; /* Fade-in effect */
-  transform: scale(1.05); /* Slightly scale the h1on on hover */
+  animation: fadeIn 1s ease-in-out; 
+  transform: scale(1.05); 
 }
 
 .content {
@@ -1322,14 +1288,14 @@ h2 a {
 }
 
 .content-section h2 {
-  margin-bottom: 1rem;  /* odstęp między h2 a listą */
-  text-align: center;   /* upewnia się, że sam h2 też jest wyśrodkowany */
+  margin-bottom: 1rem;  
+  text-align: center;   
 }
 
 .content-section {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center */
+  justify-content: center; 
   width: 50%;
   padding: 15px;
   padding-left: 20px;
@@ -1342,8 +1308,6 @@ h2 a {
   margin-right: -30px;
   z-index: 100;
 }
-
-
 
 .content-section p {
   font-family: "Poppins", sans-serif;
@@ -1360,7 +1324,7 @@ h2 a {
   margin-right: 50px;
   margin-top: -100px;
   flex-direction: column;
-  justify-content: center; /* Vertically center */
+  justify-content: center; 
   width: 60%;
   padding: 15px;
   border-radius: 12px;
@@ -1395,7 +1359,7 @@ h2 a {
 }
 
 .start h3 {
-  opacity: 0; /* Initially hide the text */
+  opacity: 0; 
   transition: opacity 0.3s ease-in-out;
   font-size: 24px;
   text-align: center;
@@ -1403,26 +1367,25 @@ h2 a {
 }
 
 .start.visible h3 {
-  opacity: 1; /* Make the text visible when clicked */
+  opacity: 1; 
 }
 
 .start.visible {
-  transform: rotateY(0deg); /* Reset rotation on click if needed */
-  background-color: #a1c24b; /* Slightly change background color to indicate it's visible */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for emphasis */
-  animation: none; /* Stop pulse animation after click */
+  transform: rotateY(0deg); 
+  background-color: #a1c24b; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: none; 
 }
 
 .start:hover {
-  background-color: #e1e17d; /* Lighter background on hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  background-color: #e1e17d; 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .start:active {
-  transform: scale(0.98); /* Slight shrink effect on click */
+  transform: scale(0.98); 
 }
 
-/* Pulse effect to grab attention */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -1434,7 +1397,6 @@ h2 a {
   }
 }
 
-/* Sunray Effect - Radiate animation */
 @keyframes sunrayEffect {
   0% {
     transform: scale(1);
@@ -1448,10 +1410,9 @@ h2 a {
   }
 }
 
-/* Position the .start elements based on the logo */
 .platform {
   display: flex;
-  justify-content: space-between; /* This will justify items inside the container */
+  justify-content: space-between; 
   line-height: 50px;
   margin: 30px 200px 110px 300px;
   width: 60%;
@@ -1484,9 +1445,9 @@ h2 a {
 }
 
 .text {
-  flex-direction: column; /* Stack text vertically */
-  text-align: right; /* Align the text to the right */
-  padding-left: 20px; /* Optional: Add padding to move text away from edge */
+  flex-direction: column; 
+  text-align: right; 
+  padding-left: 20px; 
   margin-right: 100px;
   line-height: 1.6;
   position: relative;
@@ -1503,7 +1464,7 @@ h2 a {
 
 .progress {
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
   align-items: center;
   padding-bottom: 100px;
   animation: fadeInUp 1s ease-in-out;
@@ -1514,7 +1475,7 @@ h2 a {
 
 .progress2 {
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
   align-items: center;
   padding-bottom: 100px;
   animation: fadeInUp 1s ease-in-out;
@@ -1522,8 +1483,6 @@ h2 a {
   margin-top: 30px;
   gap: 40px;
 }
-
-
 
 .rapid,
 .steady {
@@ -1533,7 +1492,7 @@ h2 a {
   align-items: center;
   text-align: center;
   position: relative;
-  margin: 0; /* zamiast 100px z lewej i prawej */
+  margin: 0; 
   transition: transform 0.3s ease-in-out;
   margin-bottom: -20px;
 }
@@ -1572,14 +1531,14 @@ h2 a {
   font-style: normal;
   letter-spacing: 0px;
   -webkit-text-stroke: 0.5px #00ffff;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .image-text-rapid h4:hover {
   margin-bottom: 0;
   color: #1c3a41;
   -webkit-text-stroke: 1px #00ffff;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .image-text-rapid-course h4 {
@@ -1591,8 +1550,6 @@ h2 a {
   letter-spacing: 0px;
   
 }
-
-
 
 .color2:hover .image-text-steady h4,
 .color2:hover .image-text-rapid h4 {
@@ -1618,21 +1575,21 @@ h2 a {
   font-style: bolder;
   letter-spacing: 0px;
   -webkit-text-stroke: 0.5px #00ffff;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .image-text-steady h4:hover {
   margin-bottom: 0;
   color: #1c3a41;
   -webkit-text-stroke: 1px #00ffff;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .image-text-steady-course, .image-text-rapid-course {
   display: flex;
   flex-direction: column;
-  align-items: center; /* WAŻNE: poziome centrowanie */
-  text-align: center; /* Centrowanie tekstu */
+  align-items: center; 
+  text-align: center; 
   background: #1c3a41;
   border-radius: 30px;
 padding: 20px;  
@@ -1656,14 +1613,13 @@ height: 100%;
 #type1 {
   visibility: hidden;
   white-space: nowrap;
-  overflow: hidden; /* opcjonalne: ukrywa nadmiar tekstu */
-  text-overflow: ellipsis; /* opcjonalne: pokazuje "..." gdy się nie mieści */
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 #basicLink {
-
     -webkit-text-stroke: 0.5px #1c3a41;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
   color: #00FFFF;
     text-align: center;
@@ -1676,12 +1632,10 @@ height: 100%;
  font-weight: 100;
 }
 
-
 #intensiveLink {
   color: #00FFFF;
     -webkit-text-stroke: 0.5px #1c3a41;
-      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* cieÅ„ z gÃ³ry */
-
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); 
         text-align: center;
  font-family: 'Courier New', Courier, monospace; 
   font-size: 30px;
@@ -1690,7 +1644,6 @@ height: 100%;
     word-spacing: 3px;
  font-family: 'Courier New', Courier, monospace;
  font-weight: 100;
-
 }
 
 #schedule {
@@ -1700,7 +1653,6 @@ height: 100%;
   font-weight: lighter;
   letter-spacing: -1px;
   border-radius: 20px;
-
 }
 
 #schedule:hover {
@@ -1870,39 +1822,35 @@ height: 100%;
   }
 }
 
-/* Initially hide the content off-screen to the left */
 .guide h5,
 .guide a {
-  transform: translateX(-100%); /* Start off-screen to the left */
-  opacity: 0; /* Initially invisible */
-  transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth transition */
+  transform: translateX(-100%); 
+  opacity: 0; 
+  transition: transform 1s ease-out, opacity 1s ease-out; 
 }
 
-/* Class to add after the element enters the viewport */
 .guide.in-view h5,
 .guide.in-view a {
-  transform: translateX(0); /* Move to original position */
-  opacity: 1; /* Make visible */
+  transform: translateX(0); 
+  opacity: 1; 
 }
 
-/* Optionally stagger the effects */
 .guide.in-view h5 {
-  transition-delay: 0.2s; /* Delay for the h5 element */
+  transition-delay: 0.2s; 
 }
 
 .guide.in-view a {
-  transition-delay: 5s; /* Delay for the anchor tag */
+  transition-delay: 5s; 
 }
 
-/* Keyframes for the slide-in animation */
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%); /* Start off to the left */
-    opacity: 0; /* Start invisible */
+    transform: translateX(-100%); 
+    opacity: 0; 
   }
   100% {
-    transform: translateX(0); /* Move to the original position */
-    opacity: 1; /* Fully visible */
+    transform: translateX(0); 
+    opacity: 1; 
   }
 }
 
@@ -1985,8 +1933,8 @@ height: 100%;
 .demo,
 .email {
   width: 20%;
-  display: flex; /* Use Flexbox inside each item */
-  flex-direction: column; /* Stack the ee and text vertically */
+  display: flex; 
+  flex-direction: column; 
   align-items: center;
   margin: 10px;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -1995,7 +1943,7 @@ height: 100%;
 .insta:hover,
 .demo:hover,
 .email:hover {
-  transform: translateY(-10px); /* Hover effect to raise the item */
+  transform: translateY(-10px); 
   opacity: 1;
 }
 
@@ -2032,7 +1980,7 @@ height: 100%;
 .instai:hover,
 .demoi:hover,
 .emaili:hover {
-  transform: scale(1.2); /* Slight zoom effect on hover */
+  transform: scale(1.2); 
   opacity: 1.4;
 }
 
@@ -2049,7 +1997,7 @@ height: 100%;
 
 #green {
  font-family: 'Courier New', Courier, monospace; 
-  transition: all 0.2s ease; /* ← add this */
+  transition: all 0.2s ease; 
   font-size: 16px;
   background-color: #8a2be2;
   padding: 15px 30px;
@@ -2110,8 +2058,8 @@ height: 100%;
 
 footer {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+  justify-content: center; 
+  align-items: center;
   margin: 50px;
   margin-top: 120px;
 }
@@ -2127,11 +2075,10 @@ footer {
 }
 
 .link:hover {
-  color: #8a2be2; /* On hover, change color to match the rest of the site */
-}
+  color: #8a2be2; 
 
 .dawaj {
-  margin-top: 100px; /* Optional: removes default margin from <p> */
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -2155,38 +2102,28 @@ footer {
   
 }
 
-
 footer {
   overflow: hidden;
-  
 }
-
-/*COURSES*/
-/* General Styles for Pricing Section */
-/* Container for pricing items */
-/* Pricing container styles */
-
-
 
 .pricing-container {
   height: 100px;
-  margin-top: 0; /* Remove any top margin */
-  padding-top: 0; /* Remove any top padding if needed */
+  margin-top: 0;
+  padding-top: 0; 
   display: flex;
   justify-content: center;
-  gap: 30px; /* was too small before */
+  gap: 30px; 
   margin-left: 270px;
   margin-right: 270px;
   margin-top: -50px;
   margin-bottom: 0;
   border-radius: 10px;
   padding: 30px;
-  transform: translateY(100px); /* Start below the viewport */
+  transform: translateY(100px); 
   opacity: 0;
-  transition: opacity 0.5s ease, transform 2s ease; /* Smooth animation */
+  transition: opacity 0.5s ease, transform 2s ease;
 }
 
-/* Fade-In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -2201,7 +2138,6 @@ footer {
   transform: translateY(0);
 }
 
-/* Styling for the Pricing Links */
 .pricing-link {
   color: white;
   line-height: 1.5;
@@ -2226,11 +2162,9 @@ footer {
   color: #1c3a41;
 }
 
-/* Each pricing item styles */
 .pricing-item {
   transition: all 0.3s ease;
     position: relative;
-
 }
 
 .pricing-submenu {
@@ -2244,9 +2178,6 @@ footer {
   display: block;
 }
 
-
-
-
 .pricing-section {
   margin: 70px 220px;
 
@@ -2256,30 +2187,28 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
-
 }
 
-/* Notification style for pricing submenu content */
 .pricing-submenu-content {
   position: absolute;
   top: 50%;
   left: 50%;
   background: #735D78;
   border: 2px solid white;
-  color: #1c3a41; /* Adjust text color */
+  color: #1c3a41; 
   padding: 20px;
   padding-right: 5px; padding-left: 5px;
   padding-bottom: 25px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-    backdrop-filter: none;     /* prevent blur/filter from showing background */
+    backdrop-filter: none;     
 mix-blend-mode: normal;
  font-family: 'Courier New', Courier, monospace; 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease, width 0.4s ease; /* Ensure width change is smooth */
-  width: 300px; /*Set the default width */
+  transition: opacity 0.4s ease, width 0.4s ease; 
+  width: 300px; 
   display: block;
   font-weight: lighter;
   font-style: normal !important;
@@ -2297,17 +2226,16 @@ mix-blend-mode: normal;
   pointer-events: auto;
   top: 50%;
   left: 50%;
-  width: 270px; /* Keep width consistent even when showing */
+  width: 270px; 
 }
 
-/* Notification-style centered */
 .pricing-submenu-content.notification-style {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  width: 400px; /* Ensure consistent width */
+  width: 400px; 
   max-width: 90vw;
 }
 
@@ -2324,7 +2252,6 @@ mix-blend-mode: normal;
 }
 
 .sale-tag {
-  
   position: absolute;
   top: 10px;
   right: -35px;
@@ -2350,7 +2277,6 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 }
 
-/* Paper hole (eyelet) */
 .sale-tag::before {
   content: "";
   position: absolute;
@@ -2366,13 +2292,11 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   
 }
 
-/* Optional glow-on-hover effect */
 .sale-tag:hover {
   box-shadow: 0 0 12px rgba(255, 217, 61, 0.8), 0 4px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-/* Stamp animation */
 @keyframes stamp {
   0% {
     transform: rotate(20deg) scale(2);
@@ -2397,9 +2321,6 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   animation: stamp 0.4s cubic-bezier(0.3, 1.4, 0.5, 1) forwards;
 }
 
-/* Hole in the tag */
-
-/* Animate only when .animate-tag is applied */
 .animate-tag {
   animation: bounceIn 0.8s ease-out, glow 2s infinite alternate;
 }
@@ -2446,7 +2367,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 }
 
 .type3 {
-  padding-right: 2px; /* minimal space for the cursor */
+  padding-right: 2px;
   font-weight: lighter;
   white-space: nowrap;
   overflow: hidden;
@@ -2454,12 +2375,10 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   display: inline-block;
   font-size: 20px;
   word-spacing: 0px;
-  /* Reserve space from the start and prevent shifting */
-  min-width: 15ch; /* Adjust this based on the longest text you expect (e.g., "BASIC COURSE") */
-  width: auto; /* Ensure the width adapts to the content */
+  min-width: 15ch;
+  width: auto; 
 }
 
-/* Adjust cursor animation for blinking effect */
 @keyframes blinkCursor {
   0% {
     border-right: 2px solid transparent;
@@ -2473,7 +2392,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 }
 
 .type4 {
-  padding-right: 2px; /* minimalna przestrzeń dla kursora */
+  padding-right: 2px; 
   font-family: "Bebas Neue", sans-serif;
   white-space: nowrap;
   overflow: hidden;
@@ -2482,9 +2401,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   font-size: 27px;
   letter-spacing: 3px;
   word-spacing: 0px;
-
-  /* ✅ Rezerwuj miejsce od razu */
-  min-width: 8ch; /* dostosuj do długości tekstu */
+  min-width: 8ch;
 }
 
 @keyframes blinkCursor {
@@ -2503,8 +2420,6 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
     white-space: nowrap;
     animation: blinkCursor 0.75s step-end infinite;
     display: inline-block;
-
-    /* ✅ Rezerwuj miejsce od razu */
   }
 
   @keyframes blinkCursor {
@@ -2518,7 +2433,6 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   }
 
   
-
 .type2,
 #type1 {
   letter-spacing: 0px;
@@ -2534,9 +2448,7 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   display: inline-block;
   font-size: 23px;
   padding-right: 5px;
-
-  /* ✅ Rezerwuj miejsce od razu */
-  min-width: 13ch; /* dostosuj do długości tekstu */
+  min-width: 13ch; 
   letter-spacing: 0.5px;
 }
 
@@ -2555,7 +2467,6 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   margin: 0 auto;
 }
 
-/* Ukrycie przycisku hamburgera na dużych ekranach */
 .nav-toggle {
   display: none;
   font-size: 2rem;
@@ -2575,8 +2486,6 @@ margin: -10px;
   font-weight: 400;
        font-style: normal;
      line-height: 0px;
-
-
 }
 
 .learn {
@@ -2584,8 +2493,8 @@ margin: -10px;
 }
 
 .nav-list li a.learn, .nav-list li a.learn2 {
-  display: inline-block; /* lub block */
-  margin-top: 18px;      /* odsuwa w dół */
+  display: inline-block; 
+  margin-top: 18px;     
   text-decoration: underline;
   text-decoration-color: #A86CCF;
   text-decoration-style: dotted;
@@ -2595,15 +2504,13 @@ margin: -10px;
 nav li {
   transition: transform 0.3s ease, 0.3s ease;
        padding-bottom: 40px;
-
 }
-
 
 .nav .ul {
   display: block;
   width: 400px;
   margin: 0;
-  
+ 
 }
 
 nav h2 a {
@@ -2627,8 +2534,8 @@ nav h2 a {
 
 .menu-item {
   margin-bottom: 5px;
-  padding: 0; /* Reset padding if needed */
-  position: relative; /* Needed for positioning the submenu */
+  padding: 0; 
+  position: relative; 
 }
 
 .menu-item a {
@@ -2645,7 +2552,7 @@ nav h2 a {
 
 .menu-item a:hover {
   background-color: #555;
-  transform: scale(1.05); /* Slightly scale the h1on on hover */
+  transform: scale(1.05); 
 }
 
 .menu-link {
@@ -2676,7 +2583,7 @@ nav h2 a {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(20px); /* Start position off-screen */
+  transform: translateX(20px); 
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
@@ -2684,16 +2591,16 @@ nav h2 a {
   display: block;
   opacity: 1;
   visibility: visible;
-  transform: translateX(0); /* Smoothly slide in */
+  transform: translateX(0); 
 }
 
 .submenu-content {
-  margin-top: 10px; /* Space between submenu items */
-  padding-left: 10px; /* Padding for better alignment */
+  margin-top: 10px; 
+  padding-left: 10px;
 }
 
 .submenu-content p {
-  margin: 5px 0; /* Add vertical space between paragraphs */
+  margin: 5px 0; 
 }
 
 .submenu-content .no {
@@ -2715,11 +2622,9 @@ nav h2 a {
   width: 1px;
   height: 100px;
   background-color: #1c3a41;
-  margin: 0 40px; /* lub inna wartość */
-  /* Pozycja linii w poziomie (50% oznacza środek ekranu) */
+  margin: 0 40px; 
 }
 
-/* Styl tekstu */
 .wave {
   border: none;
   height: 8px;
@@ -2742,26 +2647,19 @@ nav h2 a {
   margin: 270px;
   margin-top: 0px;
   margin-bottom: 100px;
-
-  /* tło białe + kratka */
   background-color: white;
   background-image:
     linear-gradient(to right, #ccc 1px, transparent 1px),
     linear-gradient(to bottom, #ccc 1px, transparent 1px);
   background-size: 20px 20px;
-
-  /* cień jak kartka na stole */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); /* delikatnie mocniejszy i rozmyty cień */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); 
   border-radius: 8px;
-
-  /* efekt notatki odręcznej */
   transform: rotate(-1deg);
   border: 1px solid #ddd;
   background-clip: padding-box;
   position: relative;
 }
 
-/* szpilki z delikatnym cieniem */
 .details::before,
 .details::after {
   content: '';
@@ -2771,7 +2669,7 @@ nav h2 a {
   background: #735d78;
   border-radius: 50%;
   top: -6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* cień pod szpilką */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .details::before {
@@ -2792,8 +2690,7 @@ nav h2 a {
   letter-spacing: 5px;
   color: #8A2BE2;
    -webkit-text-stroke: 0.5px #00ffff;
-  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
-
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6); 
  font-family: 'Courier New', Courier, monospace; 
   margin: 0px;
   background: #66CCCC;
@@ -2823,8 +2720,7 @@ nav h2 a {
 }
 
 .card-3d {
-  height: auto; /* pozwól rosnąć zgodnie z zawartością */
-
+  height: auto; 
   width: 100%;
   position: relative;
   transition: transform 0.8s;
@@ -2853,7 +2749,6 @@ nav h2 a {
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
   animation: glow 1.5s infinite alternate;
    font-family: 'Courier New', Courier, monospace; 
-   
 }
 
 @keyframes glow {
@@ -2868,7 +2763,6 @@ nav h2 a {
 .white {
   color: white;
 }
-
 
 .card-face {
   backface-visibility: hidden;
@@ -2885,11 +2779,8 @@ padding: 100px;
 .card-face p {
   font-size: 22px;
   color: #00FFFF;
-    font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;   
 }
-
-
 
 .card-face h3 {
   color: #8A2BE2;
@@ -2897,17 +2788,14 @@ padding: 100px;
     font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6); /* cieÅ„ z gÃ³ry */
-
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
   font-size: 23px;
   letter-spacing: -2px;
 }
 
-/* front - mała wizytówka */
 .card-front {
   background: #1c3a41;
     color: #00ffff;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2915,7 +2803,6 @@ padding: 100px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     height: 300px;
-
 }
 
 .card-bottom-text {
@@ -2927,7 +2814,6 @@ padding: 100px;
   font-weight: bold;
 }
 
-/* back - rozciąga się na całą szerokość przy expanded */
 .card-back {
   transform: rotateY(180deg);
   background: #1c3a41;
@@ -2935,7 +2821,6 @@ padding: 100px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Gdy wrapper jest rozszerzony (po flipie) karta tył ma max szerokość */
 .card-3d-wrapper.expanded .card-back {
   width: 100vw;
   max-width: 100%;
@@ -2947,7 +2832,6 @@ padding: 100px;
   overflow-y: visible;
 }
 
-/* Style tekstu */
 .details2 {
   max-width: 900px;
   margin: 0 auto;
@@ -2956,23 +2840,20 @@ padding: 100px;
   font-weight: lighter;
 }
 
-/* Ukryj scrollbar w przeglądarkach */
 .card-back::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-
-
 .details2 {
-  padding-bottom: 0; /* Remove bottom padding */
+  padding-bottom: 0; 
   margin: 270px;
   padding: 80px;
   display: grid;
-  justify-content: space-between; /* This will justify items inside the container */
+  justify-content: space-between; 
   margin-top: 0px;
   margin-bottom: 0px;
-  background-size: 20px 20px; /* Rozmiar kratki */
+  background-size: 20px 20px; 
   font-family: "Courier New", Courier, monospace;
   letter-spacing: -2px;
   z-index: -1;
@@ -3046,7 +2927,7 @@ a.shiny-link {
 }
 
 a.shiny-link::after {
-    z-index: -1; /* <<< to najważniejsze */
+    z-index: -1; 
 
   content: "";
   position: absolute;
