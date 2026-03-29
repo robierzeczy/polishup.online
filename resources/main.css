@@ -62,6 +62,16 @@ main {
   margin-bottom: 100;         /* kontrolujemy dolny odstęp paddingiem */
 }
 
+.logo-heading-container2 {
+  margin-bottom: 100px; /* desktop */
+}
+
+@media (max-width: 768px) {
+  .logo-heading-container2 {
+    margin-bottom: 20px; /* mobile */
+  }
+}
+
 .logo-heading-container-background {
   background-color: #ffd700;
   padding: 100px;
