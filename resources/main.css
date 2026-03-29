@@ -3823,6 +3823,7 @@ textarea:focus {
 
 .experience {
   padding: 20px;
+  padding-top: 5px;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
