@@ -2618,9 +2618,7 @@ margin: -10px;
 .nav-list li a.learn, .nav-list li a.learn2 {
   display: inline-block; /* lub block */
   margin-top: 18px;      /* odsuwa w dół */
-  text-decoration: underline;
-  text-decoration-color: #A86CCF;
-  text-decoration-style: dotted;
+
 }
 
 
@@ -5344,7 +5342,7 @@ width: 60%;
 }
 
 .nav-list a {
-  color: #735D78;
+  color: #1c3a41;
   letter-spacing: -1px;
   font-size: 23px;
 }
