@@ -5299,7 +5299,7 @@ width: 60%;
   .menu-label {
     display: block;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 6px 10px;
     width: auto;               /* nie fit-content */
     max-width: 90%;            /* maksymalnie 90% szerokości ekranu */
