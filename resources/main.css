@@ -1858,6 +1858,7 @@ height: 100%;
   justify-content: center;
 }
 
+
 .guide h5 {
   color: #1c3a41;
   margin-bottom: 30px;
@@ -5484,8 +5485,9 @@ display: none;
   }
 
     .guide {
-    margin: 150px 10px;
-  }
+    margin: 100px 10px;
+    margin-bottom: 130px;
+    }
 
   .guide h5 {
     font-size: 25px;
