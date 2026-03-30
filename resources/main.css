@@ -6133,6 +6133,8 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
   /* ukrywamy menu domyślnie */
   .nav-list {
+      border-radius: 12px; /* możesz zmienić np. 20px */
+
     position: absolute;
     top: 70px;
     left: 0;
