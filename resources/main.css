@@ -6214,3 +6214,15 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   }
 }
 
+
+@media (max-width: 768px) {
+  .details {
+    padding: 20px; /* mniejsze na telefonie */
+    margin: 20px;  /* mniejsze marginesy */
+    background-color: white; /* OK, ale nie nadpisuj gradientów */
+    background-image:
+      linear-gradient(to right, #ccc 1px, transparent 1px),
+      linear-gradient(to bottom, #ccc 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
