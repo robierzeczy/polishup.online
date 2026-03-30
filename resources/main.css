@@ -6128,3 +6128,62 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
 
 
     }
+
+    @media (max-width: 768px) {
+
+  /* ukrywamy menu domyślnie */
+  .nav-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #735D78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    transform: translateY(-200%);
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  /* pokazujemy po kliknięciu */
+  #menu-toggle:checked ~ .nav-list {
+    transform: translateY(0);
+  }
+
+  /* przyciski */
+  .nav-list li a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .nav-list li a:hover {
+    transform: scale(1.05);
+  }
+
+  /* CTA (free lesson) */
+ 
+
+  /* label menu */
+  .menu-label {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.learn {
+  white-space: nowrap;
+}
+
+.nav-list li a {
+  width: fit-content;
+}
+
