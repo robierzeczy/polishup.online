@@ -6197,3 +6197,20 @@ background: linear-gradient(135deg, #ffd93d 0%, #ffe873 50%, #ffd93d 100%);
   }
 }
 
+@media (max-width: 768px) {
+  /* kontener nagłówka */
+  .logo-heading-container2 {
+    margin-bottom: 60px; /* zmniejszamy przestrzeń pod nagłówkiem */
+  }
+
+  /* lub jeśli masz <br><br> po nagłówku */
+  .logo-heading-container2 br {
+    display: none; /* usuwa dodatkowe puste linie na telefonie */
+  }
+
+  /* jeśli sekcja Rapid-Fire ma padding/margin na górze */
+  .rapid, .progress {
+    margin-top: 30px; /* lub np. 5px */
+  }
+}
+
