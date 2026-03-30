@@ -5509,7 +5509,7 @@ display: none;
 
     .gray {
     width: 90%;
-    padding: 20px 20px 650px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
+    padding: 20px 20px 680px 20px; /* zwiększony padding u dołu, żeby obejmowało przycisk */
     border-radius: 30px;
     background-color: #8a2be2;
     display: flex;
