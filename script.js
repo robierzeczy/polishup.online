@@ -548,25 +548,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
 });
-// ==============================
-// PŁYNNE SCROLLOWANIE DO #cardWrapper
-// ==============================
-
-function scrollToHash() {
-  if (window.location.hash) {
-    const target = document.querySelector(window.location.hash);
-    if (target) {
-      // małe opóźnienie, żeby strona zdążyła się wyrenderować
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 50);
-    }
-  }
-}
-
-// przewiń po pełnym załadowaniu DOM
-window.addEventListener('DOMContentLoaded', scrollToHash);
-
-// przewiń także jeśli ktoś zmieni hash bez przeładowania strony
-window.addEventListener('hashchange', scrollToHash);
-
