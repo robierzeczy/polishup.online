@@ -381,7 +381,6 @@ document.querySelectorAll(".time-slots button").forEach((button) => {
   });
 });
 
-// A jeśli chcesz zebrać aktywne:
 function getSelectedSlots() {
   return Array.from(document.querySelectorAll(".time-slots button.active")).map(
     (button) => ({
@@ -502,7 +501,7 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.scrollIntoView({ behavior: "smooth" });
   }
 
-  // Obsługa przycisku "← BACK" (opcjonalny przycisk na tyle karty)
+  // Obsługa przycisku "← BACK" ( przycisk na tyle karty)
   if (backButton) {
     backButton.addEventListener("click", (e) => {
       e.stopPropagation(); // zapobiega kliknięciu na wrapperze
