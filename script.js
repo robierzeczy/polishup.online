@@ -80,7 +80,7 @@ observeTypewriter("basicLink", "STEADY-FLOW", 100, true, 1000);        // raz, 2
 
 const container = document.getElementById("maszyna3");
 if (container) {
-  const lines = ["Free", "Demo"]; // dwa wiersze
+  const lines = ["Free", "Intro"]; // dwa wiersze
   const delay = 100;
 
   container.textContent = "";
