@@ -36,9 +36,10 @@ main {
   align-items: center; /* Centers vertically */
 }
 
-.polishuplogo {
+.polishuplogo img {
   width: 250px;
-  height: auto;
+    height: auto;
+  display: block;
 }
 
 .logo-heading-container {
