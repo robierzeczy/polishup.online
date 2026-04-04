@@ -36,6 +36,11 @@ main {
   align-items: center; /* Centers vertically */
 }
 
+.polishuplogo {
+  width: 250px;
+  height: auto;
+}
+
 .logo-heading-container {
   position: relative;
   display: flex;
