@@ -579,8 +579,8 @@ nav {
 
 .logo-container {
   text-align: center; /* Centers text inside elements like h5 */
-  margin-top: -250px;
-}
+  margin-top: -180px;
+  margin-bottom: -20px;}
 
 .logo {
   height: 240px; /* Height of the circle */
