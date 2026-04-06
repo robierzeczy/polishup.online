@@ -801,6 +801,8 @@ h4 {
   font-style: italic;
   font-weight: lighter;
   transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 5px;
+
 }
 
 #more_steady:hover {
@@ -1630,20 +1632,6 @@ h2 a {
   
 }
 
-
-
-.color2:hover .image-text-steady h4,
-.color2:hover .image-text-rapid h4 {
-  color: #1c3a41;
-  transition: color 1s ease-in-out, transform 0.1s ease-in-out;
-}
-
-.color2:hover .steady p,
-.color2:hover .rapid p {
-      -webkit-text-stroke: 0.3px black;
-
-}
-
 .image-text-steady h4 {
   transition: transform 0.3s ease;
 
@@ -1771,6 +1759,8 @@ height: 100%;
   transition: transform 0.3s ease, opacity 0.3s ease;
   border-radius: 50%;
   margin-top: 15px;
+    margin-bottom: 20px;
+
 }
 
 #steadyi2 {
@@ -1781,6 +1771,8 @@ height: 100%;
   border-radius: 50%;
   margin-bottom: 5px;
   margin-top: 15px;
+    margin-bottom: 20px;
+
 }
 
 #steadyi:hover,
