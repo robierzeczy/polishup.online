@@ -512,6 +512,10 @@ nav {
   word-spacing: 15px;
 }
 
+#freedemo {
+  MARGIN-TOP: -100PX;
+}
+
 /* Kluczowa animacja */
 @keyframes slideFromRight {
   0% {
