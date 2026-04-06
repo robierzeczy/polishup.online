@@ -1659,12 +1659,16 @@ h2 a {
   flex-direction: column;
   align-items: center; /* WAŻNE: poziome centrowanie */
   text-align: center; /* Centrowanie tekstu */
-  background: #1c3a41;
+  background: #735D78;
   border-radius: 30px;
 padding: 20px;  
 padding-bottom: 50px;
 width: 100%;
 height: 100%;
+}
+
+.image-text-steady-course:hover, .image-text-rapid-course:hover {
+background-color: #f06c9b;
 }
 
 .image-text-steady-course h4 {
