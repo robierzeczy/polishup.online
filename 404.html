@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL='https://polishup.online/'" />
-    <script>
-      // Dodatkowy JS redirect dla przeglądarek, które ignorują meta refresh
-      window.location.href = "https://polishup.online/";
-    </script>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, <a href="https://polishup.online/">click here</a>.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 – Page not found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 520px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: #333;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>404</h1>
+    <p>Oops! This page doesn’t exist.</p>
+
+    <a href="https://polishup.online/" class="button">
+      Go to PolishUp homepage
+    </a>
+  </div>
+
+</body>
 </html>
